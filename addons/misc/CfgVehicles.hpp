@@ -112,7 +112,6 @@ class CfgVehicles {
         maximumLoad = 0;
         transportMaxBackpacks = 0;
         transportMaxMagazines = 64;
-        transportMaxMagazines = 12;
         class TransportItems;
         class CargoTurret;
         class Turrets {
