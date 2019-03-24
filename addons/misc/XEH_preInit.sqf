@@ -6,7 +6,7 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-#define CBA_SETTINGS_CAT "KAT - ACE Exposure"
+#define CBA_SETTINGS_CAT "Kellerkompanie Medical: Misc"
 
 //Enable aceExposure things
 [
