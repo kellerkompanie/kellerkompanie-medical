@@ -17,4 +17,4 @@
 
 params ["_target"];
 
-_target getVariable ["kat_aceCirculation_bloodtype", "O"];
+_target getVariable [QGVAR(bloodtype), "O"];

@@ -17,4 +17,4 @@
 
 params ["_unit"];
 
-_unit setVariable ["kat_aceCirculation_IV_counts", 0, true];
+_unit setVariable [QGVAR(IV_counts), 0, true];
