@@ -8,7 +8,6 @@ PREP(handleInit);
 PREP(handlePuking);
 PREP(handleTimer);
 PREP(init);
-PREP(registerSettings);
 PREP(treatmentAdvanced_Accuvac);
 PREP(treatmentAdvanced_AccuvacLocal);
 PREP(treatmentAdvanced_airway);

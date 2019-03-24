@@ -5,7 +5,6 @@ PREP(handleInit);
 PREP(init);
 PREP(moduleAllergical);
 PREP(moduleBee);
-PREP(registerSettings);
 PREP(treatmentAdvanced_clothes);
 PREP(treatmentAdvanced_clothesLocal);
 PREP(treatmentAdvanced_ftsLocal);

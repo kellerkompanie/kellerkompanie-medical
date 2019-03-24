@@ -5,11 +5,6 @@ class Extended_PreInit_EventHandlers {
     };
 };
 
-class Extended_PreInit_EventHandlers {
-    class kat_aceMisc_preInit {
-        init = "call kat_aceMisc_fnc_registerSettings";
-    };
-};
 class Extended_Init_EventHandlers {
     class CAManBase {
         class kat_aceMisc_init {

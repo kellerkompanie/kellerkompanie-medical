@@ -9,7 +9,6 @@ PREP(handleInit);
 PREP(handleTreatment);
 PREP(init);
 PREP(onCloseDialog);
-PREP(registerSettings);
 PREP(removeEffect_IV);
 PREP(removeItemfromMag);
 PREP(removeLog);

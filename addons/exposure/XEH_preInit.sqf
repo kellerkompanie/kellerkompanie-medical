@@ -1,19 +1,10 @@
 #include "script_component.hpp"
-/*
- * Author: Katalam
- * CBA Settings function
- *
- * Arguments:
- * None
- *
- * Return Value:
- * None
- *
- * Example:
- * call kat_aceExposure_fnc_registerSettings;
- *
- * Public: No
- */
+
+ADDON = false;
+
+PREP_RECOMPILE_START;
+#include "XEH_PREP.hpp"
+PREP_RECOMPILE_END;
 
 #define CBA_SETTINGS_CAT "KAT - ACE Exposure"
 
@@ -27,4 +18,4 @@
     true
 ] call CBA_Settings_fnc_init;
 
-nil;
+ADDON = true;

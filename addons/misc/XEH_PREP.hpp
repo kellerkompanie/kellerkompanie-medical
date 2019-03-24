@@ -9,7 +9,6 @@ PREP(getNumOpenWounds);
 PREP(handleInit);
 PREP(init);
 PREP(limitWounds);
-PREP(registerSettings);
 PREP(removeIVbag);
 PREP(stretcher);
 PREP(treatmentIV);

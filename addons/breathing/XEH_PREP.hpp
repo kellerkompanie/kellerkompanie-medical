@@ -4,7 +4,6 @@ PREP(handleBreathing);
 PREP(handleInit);
 PREP(handlePulmoHit);
 PREP(init);
-PREP(registerSettings);
 PREP(treatmentAdvanced_chestSeal);
 PREP(treatmentAdvanced_chestSealLocal);
 PREP(treatmentAdvanced_pulseoximeter);

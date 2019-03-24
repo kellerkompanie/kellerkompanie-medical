@@ -5,11 +5,6 @@ class Extended_PreInit_EventHandlers {
     };
 };
 
-class Extended_PreInit_EventHandlers {
-    class kat_aceBreathing_preInit {
-        init = "call kat_aceBreathing_fnc_registerSettings";
-    };
-};
 class Extended_Init_EventHandlers {
     class CAManBase {
         class kat_aceBreathing_init {
