@@ -1,0 +1,17 @@
+PREP(AED_sound);
+PREP(bloodType);
+PREP(canCheckDogtag);
+PREP(compatible);
+PREP(events);
+PREP(getDogtagData);
+PREP(groupID);
+PREP(handleInit);
+PREP(handleTreatment);
+PREP(init);
+PREP(onCloseDialog);
+PREP(registerSettings);
+PREP(removeEffect_IV);
+PREP(removeItemfromMag);
+PREP(removeLog);
+PREP(treatmentAdvanced_IV);
+PREP(treatmentAdvanced_X);

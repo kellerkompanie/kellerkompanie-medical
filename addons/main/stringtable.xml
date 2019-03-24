@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="keko_medical">
+    <Package name="main">
+        <Key ID="STR_keko_medical_main_URL">
+            <English>https://github.com/kellerkompanie/kellerkompanie-medical</English>
+            <German>https://github.com/kellerkompanie/kellerkompanie-medical</German>
+        </Key>
+    </Package>
+</Project>
