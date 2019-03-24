@@ -20,7 +20,7 @@
 params ["_player", "_target"];
 
 if (local _target) then {
-  ["treatmentPulseoximeter", [_player, _target]] call CBA_fnc_localEvent;
+    ["treatmentPulseoximeter", [_player, _target]] call CBA_fnc_localEvent;
 } else {
-  ["treatmentPulseoximeter", [_player, _target], _target] call CBA_fnc_targetEvent;
+    ["treatmentPulseoximeter", [_player, _target], _target] call CBA_fnc_targetEvent;
 };
