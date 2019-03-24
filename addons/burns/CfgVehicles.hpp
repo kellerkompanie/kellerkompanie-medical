@@ -8,7 +8,7 @@ class CfgVehicles {
         author = "Schwaggot";
         vehicleClass = "Items";
         class TransportItems {
-            MACRO_ADDITEM(GVAR(burnsBandage),1);
+            MACRO_ADDITEM(keko_sterileGauze,1);
         };
     };
     class GVAR(burnsBandageItem_used): GVAR(burnsBandageItem) {
@@ -16,7 +16,7 @@ class CfgVehicles {
         scopeCurator = 0;
         displayName = CSTRING(displayNameUsed);
         class TransportItems {
-            MACRO_ADDITEM(GVAR(burnsBandage_used), 1);
+            MACRO_ADDITEM(keko_sterileGauze_used, 1);
         };
     };
 
@@ -46,7 +46,7 @@ class CfgVehicles {
     };
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
         class TransportItems: TransportItems {
-            MACRO_ADDITEM(GVAR(burnsBandage), 20);
+            MACRO_ADDITEM(keko_sterileGauze, 20);
         };
     };
 };

@@ -5,12 +5,12 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            GVAR(burnsBandage),
-            GVAR(burnsBandage_used)
+            keko_sterileGauze,
+            keko_sterileGauze_used
         };
         weapons[] = {
-            GVAR(burnsBandage),
-            GVAR(burnsBandage_used)
+            keko_sterileGauze,
+            keko_sterileGauze_used
         };
         magazines[] = {};
         requiredAddons[] = {

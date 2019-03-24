@@ -2,7 +2,7 @@ class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
 
-    class GVAR(burnsBandage): ACE_ItemCore {
+    class keko_sterileGauze: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(displayName);
         descriptionShort = CSTRING(desc);
@@ -12,7 +12,7 @@ class CfgWeapons {
             mass = 1;
         };
     };
-    class GVAR(burnsBandage_used): GVAR(burnsBandage) {
+    class keko_sterileGauze_used: keko_sterileGauze {
         scope = 0;
         displayName = CSTRING(displayNameUsed);
     };

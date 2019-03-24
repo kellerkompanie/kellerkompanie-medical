@@ -4,7 +4,7 @@ class ACE_Medical_Actions {
         class BurnsBandage: FieldDressing {
             displayName = CSTRING(action);
             displayNameProgress = CSTRING(progress);
-            items[] = {QGVAR(burnsBandage)};
+            items[] = {"keko_sterileGauze"};
             allowedSelections[] = {"All"};
             category = "bandage";
             allowSelfTreatment = 1;
