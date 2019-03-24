@@ -1,7 +1,6 @@
 PREP(accuvacSound);
 PREP(checkAirway);
 PREP(displayPatientInformation);
-PREP(events);
 PREP(handleAirway);
 PREP(handleDie);
 PREP(handleInit);

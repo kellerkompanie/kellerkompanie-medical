@@ -1,5 +1,4 @@
 PREP(adjustSpo2);
-PREP(events);
 PREP(handleBreathing);
 PREP(handleInit);
 PREP(handlePulmoHit);

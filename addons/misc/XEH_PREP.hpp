@@ -4,7 +4,6 @@ PREP(attachStretcher);
 PREP(bandageRandomWound);
 PREP(conditionIV);
 PREP(conditionIVstand);
-PREP(events);
 PREP(getNumOpenWounds);
 PREP(handleInit);
 PREP(init);

@@ -1,6 +1,5 @@
 PREP(allergicalReaction);
 PREP(createBee);
-PREP(events);
 PREP(handleInit);
 PREP(init);
 PREP(moduleAllergical);

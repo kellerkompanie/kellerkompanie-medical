@@ -1,19 +1,4 @@
 #include "script_component.hpp"
-/*
- * Author: Katalam
- * CBA Events function - Post Init
- *
- * Arguments:
- * None
- *
- * Return Value:
- * None
- *
- * Example:
- * call kat_aceAirway_fnc_events;
- *
- * Public: No
- */
 
 if !(kat_aceAirway_enable) exitWith {};
 

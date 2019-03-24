@@ -12,8 +12,9 @@ class Extended_Init_EventHandlers {
         };
     };
 };
+
 class Extended_PostInit_EventHandlers {
-    class kat_aceBreathing_postInit {
-        init = "call kat_aceBreathing_fnc_events";
+    class ADDON {
+        init = QUOTE(call COMPILE_FILE(XEH_postInit));
     };
 };

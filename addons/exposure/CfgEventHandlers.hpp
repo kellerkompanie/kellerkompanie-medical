@@ -12,8 +12,9 @@ class Extended_Init_EventHandlers {
         };
     };
 };
+
 class Extended_PostInit_EventHandlers {
-    class kat_aceExposure_postInit {
-        init = "call kat_aceExposure_fnc_events";
+    class ADDON {
+        init = QUOTE(call COMPILE_FILE(XEH_postInit));
     };
 };

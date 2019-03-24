@@ -2,7 +2,6 @@ PREP(AED_sound);
 PREP(bloodType);
 PREP(canCheckDogtag);
 PREP(compatible);
-PREP(events);
 PREP(getDogtagData);
 PREP(groupID);
 PREP(handleInit);
