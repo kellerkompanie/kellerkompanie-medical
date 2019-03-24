@@ -19,14 +19,14 @@
 params ["_player", "_target"];
 
 if !(_target getVariable ["ace_medical_airwayOccluded", false]) exitWith {
-    private _output = localize "STR_kat_aceAirway_Airway_NA";
+    private _output = localize LSTRING(Airway_NA);
     [_output, 2, _player] call ace_common_fnc_displayTextStructured;
     false;
 };
 
 // TO-DO: head turning animation
 
-private _output = localize "STR_kat_aceAirway_turnaround_info";
+private _output = localize LSTRING(turnaround_info);
 [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
 
 if (random 100 < 35) then {

@@ -17,12 +17,8 @@
 
 params ["_unit"];
 
-// ace_medical_airwayCollapsed
-// ace_medical_airwayOccluded
-_unit setVariable ["kat_aceAirway_obstruction", false, true];
-_unit setVariable ["kat_aceAirway_airway", false, true];
-_unit setVariable ["kat_aceAirway_airway_item", "", true];
-_unit setVariable ["kat_aceAirway_overstretch", false, true];
-//_unit setVariable ["kat_aceAirway_swollen", false, true]; // useful for kat_aceDisability
-//_unit setVariable ["kat_aceAirway_sound", false, true];
-_unit setVariable ["kat_aceAirway_startTime", 0, true];
+_unit setVariable [QGVAR(obstruction), false, true];
+_unit setVariable [QGVAR(airway), false, true];
+_unit setVariable [QGVAR(airway_item), "", true];
+_unit setVariable [QGVAR(overstretch), false, true];
+_unit setVariable [QGVAR(startTime), 0, true];

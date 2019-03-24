@@ -17,4 +17,4 @@
 
 params ["_unit"];
 if (!local _unit) exitWith {};
-_unit call kat_aceAirway_fnc_init;
+_unit call FUNC(init);
