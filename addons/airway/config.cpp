@@ -5,15 +5,15 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            "KAT_guedelItem",
-            "KAT_larynxItem",
-            "KAT_accuvacItem",
-            "KAT_Vomit"
+            GVAR(guedelItem),
+            GVAR(larynxItem),
+            GVAR(accuvacItem),
+            GVAR(vomit)
         };
         weapons[] = {
-            "KAT_guedel",
-            "KAT_larynx",
-            "KAT_accuvac"
+            GVAR(guedel),
+            GVAR(larynx),
+            GVAR(accuvac)
         };
         magazines[] = {};
         requiredAddons[] = {
@@ -25,11 +25,6 @@ class CfgPatches {
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };
-};
-
-#define MACRO_ADDITEM(ITEM,COUNT) class _xx_##ITEM { \
-    name = #ITEM; \
-    count = COUNT; \
 };
 
 #include "CfgSounds.hpp"

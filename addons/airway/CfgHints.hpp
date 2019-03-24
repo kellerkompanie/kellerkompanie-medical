@@ -1,12 +1,12 @@
-class CfgHints    {
-    class KAT_Hint    {
-        displayName = "KAT Medical";
+class CfgHints {
+    class ADDON {
+        displayName = "Kellerkompanie Medical";
         class KAT_Airway    {
-            displayName = $STR_kat_aceAirway_hint_name;
-            description = $STR_kat_aceAirway_hint_desc;
+            displayName = CSTRING(hint_name);
+            description = CSTRING(hint_desc);
             tip = "";
             arguments[] = {};
-            image = "kat_aceAirway\images\larynx.paa";
+            image = QPATHTOF(ui\larynx.paa);
         };
     };
 };

@@ -20,9 +20,9 @@ In real life, this will happen sometimes, not quiet often.
 
 // Enable aceAirway injuries
 [
-    "kat_aceAirway_enable",
+    QGVAR(enable),
     "CHECKBOX",
-    localize "STR_kat_aceAirway_SETTING_ENABLE",
+    localize LSTRING(SETTING_ENABLE),
     CBA_SETTINGS_CAT,
     [true],
     true
@@ -31,9 +31,9 @@ In real life, this will happen sometimes, not quiet often.
 
 // aceAirway Injuries Death Timer
 [
-    "kat_aceAirway_deathTimer",
+    QGVAR(deathTimer),
     "SLIDER",
-    localize "STR_kat_aceAirway_SETTING_TIMER",
+    localize LSTRING(SETTING_TIMER),
     CBA_SETTINGS_CAT,
     [0, 1800, 300, 0],
     true
@@ -41,9 +41,9 @@ In real life, this will happen sometimes, not quiet often.
 
 // aceAirway Injuries probability obstruction
 [
-    "kat_aceAirway_probability_obstruction",
+    QGVAR(probability_obstruction),
     "SLIDER",
-    localize "STR_kat_aceAirway_SETTING_obstruction",
+    localize LSTRIGN(SETTING_obstruction),
     CBA_SETTINGS_CAT,
     [0, 100, 20, 0],
     true
@@ -51,9 +51,9 @@ In real life, this will happen sometimes, not quiet often.
 
 // aceAirway Injuries probability occluded
 [
-    "kat_aceAirway_probability_occluded",
+    QGVAR(probability_occluded),
     "SLIDER",
-    localize "STR_kat_aceAirway_SETTING_occluded",
+    localize LSTRING(SETTING_occluded),
     CBA_SETTINGS_CAT,
     [0, 100, 30, 0],
     true
@@ -62,18 +62,18 @@ In real life, this will happen sometimes, not quiet often.
 // aceAirway puking sound yes or no?
 // somebody told me that the sound which is played then someone is puking is super annoying and now you can remove it easily
 [
-    "kat_aceAirway_checkbox_puking_sound",
+    QGVAR(checkbox_puking_sound),
     "CHECKBOX",
-    localize "STR_kat_aceAirway_SETTING_puking_sound",
+    localize LSTRING(SETTING_puking_sound),
     CBA_SETTINGS_CAT,
     [true],
     true
 ] call CBA_Settings_fnc_init;
 
 [
-    "kat_aceAirway_string_exit",
+    QGVAR(string_exit),
     "LIST",
-    localize "STR_kat_aceAirway_SETTING_exit",
+    localize LSTRING(SETTING_exit),
     CBA_SETTINGS_CAT,
     [["", "keko_wasPunched"], ["", "keko_wasPunched"], 0],
     true

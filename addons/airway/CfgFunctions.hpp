@@ -1,38 +1,17 @@
 class CfgFunctions {
-    class kat_aceAirway {
-        file = "kat_aceAirway\functions";
-        class functions {
-            class accuvacSound{};
-            class checkAirway{};
-            class events{};
-            class handleAirway{};
-            class handleDie{};
-            class handleInit{};
-            class handlePuking{};
-            class handleTimer{};
-            class init{};
-            class registerSettings{};
-            class treatmentAdvanced_accuvac{};
-            class treatmentAdvanced_accuvacLocal{};
-            class treatmentAdvanced_airway{};
-            class treatmentAdvanced_airwayLocal{};
-            class treatmentAdvanced_overstretchHead{};
-            class treatmentAdvanced_turnaroundHead{};
-        };
-    };
-    class kat_aceMedical_Menu {
+    class ace_medical_menu {
         tag = "ace_medical_menu";
         class ace_medical_menu {
             class updateUIInfo {
-                file = "kat_aceAirway\functions\fn_updateUIInfo.sqf";
+                file = QPATHTOF(functions\fnc_updateUIInfo.sqf);
             };
         };
     };
-    class kat_aceMedical {
+    class ace_medical {
         tag = "ace_medical";
         class ace_medical {
             class displayPatientInformation {
-                file = "kat_aceAirway\functions\fn_displayPatientInformation.sqf";
+                file = QPATHTOF(functions\fnc_displayPatientInformation.sqf);
             };
         };
     };
