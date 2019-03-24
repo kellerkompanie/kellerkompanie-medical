@@ -49,4 +49,4 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 #include "ACE_Medical_Actions.hpp"
 #include "ACE_Medical_Advanced.hpp"
-#include "ui/CrossPanel_Dialog.hpp"
+#include "ui\CrossPanel_Dialog.hpp"
