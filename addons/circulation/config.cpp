@@ -5,31 +5,29 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            "KAT_PainkillerItem",
-            "KAT_X_AEDItem",
-            "KAT_medicalSupplyCrate"
+            GVAR(PainkillerItem),
+            GVAR(X_AEDItem),
+            GVAR(medicalSupplyCrate)
         };
         weapons[] = {
-            "KAT_Painkiller",
-            "KAT_bloodIV_O",
-            "KAT_bloodIV_A",
-            "KAT_bloodIV_B",
-            "KAT_bloodIV_AB",
-            "KAT_bloodIV_O_500",
-            "KAT_bloodIV_A_500",
-            "KAT_bloodIV_B_500",
-            "KAT_bloodIV_AB_500",
-            "KAT_bloodIV_O_250",
-            "KAT_bloodIV_A_250",
-            "KAT_bloodIV_B_250",
-            "KAT_bloodIV_AB_250",
-            "KAT_Painkiller_Item",
-            "KAT_X_AED",
-            "KAT_CrossPanel"
+            GVAR(Painkiller),
+            GVAR(bloodIV_O),
+            GVAR(bloodIV_A),
+            GVAR(bloodIV_B),
+            GVAR(bloodIV_AB),
+            GVAR(bloodIV_O_500),
+            GVAR(bloodIV_A_500),
+            GVAR(bloodIV_B_500),
+            GVAR(bloodIV_AB_500),
+            GVAR(bloodIV_O_250),
+            GVAR(bloodIV_A_250),
+            GVAR(bloodIV_B_250),
+            GVAR(bloodIV_AB_250),
+            GVAR(Painkiller_Item),
+            GVAR(X_AED),
+            GVAR(CrossPanel)
         };
-        magazines[] = {
-            QGVAR(canteen)
-        };
+        magazines[] = { };
         requiredAddons[] = {
             "ace_medical",
             "ace_dogtags",
@@ -43,16 +41,6 @@ class CfgPatches {
     };
 };
 
-#define MACRO_ADDITEM(ITEM,COUNT) class _xx_##ITEM { \
-    name = #ITEM; \
-    count = COUNT; \
-};
-
-#define MACRO_ADDMAGAZINE(MAGAZINE,COUNT) class _xx_##MAGAZINE { \
-    magazine = #MAGAZINE; \
-    count = COUNT; \
-};
-
 #include "CfgFunctions.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgSounds.hpp"
@@ -61,4 +49,4 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 #include "ACE_Medical_Actions.hpp"
 #include "ACE_Medical_Advanced.hpp"
-#include "ui/KAT_CrossPanel_Dialog.hpp"
+#include "ui/CrossPanel_Dialog.hpp"

@@ -1,8 +1,8 @@
-class KAT_CrossPanel_Dialog {
+class GVAR(CrossPanel_Dialog) {
     idd = -1;
     movingEnable = 1;
-    onLoad = "uiNamespace setVariable ['CrossPanel_Display', (_this select 0)]";
-    onUnload = "_this call kat_aceCirculation_fnc_onCloseDialog";
+    onLoad = "uiNamespace setVariable ['keko_medical_circulation_CrossPanel_Display', (_this select 0)]";
+    onUnload = "_this call keko_medical_circulation_fnc_onCloseDialog";
     objects[] = {};
 
     class controls {
@@ -19,7 +19,7 @@ class KAT_CrossPanel_Dialog {
             h="1.62727";
             colorBackground[]={1,1,1,1};
             colorText[]={1,1,1,1};
-            text = "\kat_acecirculation\images\crosspanel.paa";
+            text = QPATHTOF(ui\crosspanel.paa);
         };
     };
 };

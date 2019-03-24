@@ -1,11 +1,11 @@
 #include "script_component.hpp"
 
-["treatmentIVfalse", {_this call kat_aceCirculation_fnc_treatmentAdvanced_IV}] call CBA_fnc_addEventHandler;
-["IVreset", {_this call kat_aceCirculation_fnc_removeEffect_IV}] call CBA_fnc_addEventHandler;
+["treatmentIVfalse", {_this call FUNC(treatmentAdvanced_IV)}] call CBA_fnc_addEventHandler;
+["IVreset", {_this call FUNC(removeEffect_IV)}] call CBA_fnc_addEventHandler;
 
 if (hasInterface) then {
 
-    KAT_CrossPanelOpened = false;
+    GVAR(CrossPanelOpened) = false;
 
     private _fnc_createEffect = {
         params ["_type", "_layer", "_default"];
@@ -19,7 +19,7 @@ if (hasInterface) then {
         _effect
     };
 
-    kat_aceCirculation_effect_IV = [
+    GVAR(effect_IV) = [
         "chromAberration",
         4207,
         [0, 0, false]
@@ -27,20 +27,20 @@ if (hasInterface) then {
 
 
     [{
-        private _counts = ACE_PLAYER getVariable ["kat_aceCirculation_IV_counts", 0];
+        private _counts = ACE_PLAYER getVariable [QGVAR(IV_counts), 0];
         if (_counts > 0) then {
             private _ppEffect = (0.01 * _counts);
-            kat_aceCirculation_effect_IV ppEffectEnable true;
-            kat_aceCirculation_effect_IV ppEffectAdjust [_ppEffect, _ppEffect, false];
-            kat_aceCirculation_effect_IV ppEffectCommit 0.01;
+            GVAR(effect_IV) ppEffectEnable true;
+            GVAR(effect_IV) ppEffectAdjust [_ppEffect, _ppEffect, false];
+            GVAR(effect_IV) ppEffectCommit 0.01;
         } else {
-            kat_aceCirculation_effect_IV ppEffectEnable true;
-            kat_aceCirculation_effect_IV ppEffectAdjust [0, 0, false];
-            kat_aceCirculation_effect_IV ppEffectCommit 0.01;
+            GVAR(effect_IV) ppEffectEnable true;
+            GVAR(effect_IV) ppEffectAdjust [0, 0, false];
+            GVAR(effect_IV) ppEffectCommit 0.01;
         };
 
         if (!(isNull curatorCamera) or !(alive ACE_player)) exitWith {
-            kat_aceCirculation_effect_IV ppEffectEnable false;
+            GVAR(effect_IV) ppEffectEnable false;
         };
     }, 0.5, []] call CBA_fnc_addPerFrameHandler;
 };

@@ -74,7 +74,7 @@ class ACE_Medical_Advanced {
                 // This value will increase/decrease the viscoty of the blood with the percentage given. Where 100 = max. Using the minus will decrease viscosity
                 viscosityChange = 5;
                 // item class name
-                itemClassName = "KAT_Painkiller_Item";
+                itemClassName = "keko_medical_circulation_Painkiller_Item";
             };
         };
     };

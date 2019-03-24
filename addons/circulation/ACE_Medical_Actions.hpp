@@ -6,17 +6,17 @@ class ACE_Medical_Actions {
         class CPR;
 
         class Painkillers: Morphine {
-            displayName = $STR_KAT_aceCirculation_Inject_Box_Painkillers;
-            displayNameProgress = $STR_KAT_aceCirculation_Using;
+            displayName = CSTRING(Inject_Box_Painkillers);
+            displayNameProgress = CSTRING(Using);
             allowedSelections[] = {"head"};
             items[] = {};
-            callbackSuccess = "['KAT_Painkiller', _player, _target, _selectionName, 'Painkillers'] call kat_aceCirculation_fnc_removeItemfromMag";
-            condition = "('KAT_Painkiller' in (magazines _player) || 'KAT_Painkiller' in (magazines _target))";
+            callbackSuccess = "['keko_medical_circulation_Painkiller', _player, _target, _selectionName, 'Painkillers'] call keko_medical_circulation_fnc_removeItemfromMag";
+            condition = "('keko_medical_circulation_Painkiller' in (magazines _player) || 'keko_medical_circulation_Painkiller' in (magazines _target))";
             litter[] = {};
         };
         class CheckDogtags: checkPulse {
-            displayName = $STR_KAT_aceCirculation_DogTag;
-            displayNameProgress = $STR_KAT_aceCirculation_DogTag_Action;
+            displayName = CSTRING(DogTag);
+            displayNameProgress = CSTRING(DogTag_Action);
             treatmentTime = 2;
             allowedSelections[] = {"head"};
             allowSelfTreatment = 1;
@@ -30,28 +30,28 @@ class ACE_Medical_Actions {
         #include "Blood_Medical.hpp"
 
         class Defibrillator: CPR {
-            items[] = {{"adv_aceCPR_AED", "KAT_X_AED"}};
+            items[] = {{"adv_aceCPR_AED", QGVAR(AED)}};
             treatmentTime = 10;
-            callbackProgress = "call kat_acecirculation_fnc_AED_sound";
+            callbackProgress = "call keko_medical_circulation_fnc_AED_sound";
         };
         class X_Defibrillator: CPR {
-            displayName = $STR_KAT_aceCirculation_X_Action_Use;
-            displayNameProgress = $STR_KAT_aceCirculation_X_Action_Progress;
+            displayName = CSTRING(X_Action_Use);
+            displayNameProgress = CSTRING(X_Action_Progress);
             items[] = {"KAT_X_AED"};
-            condition = "!(_player getVariable ['kat_aceCirculation_use',false])";
+            condition = "!(_player getVariable ['keko_medical_circulation_use',false])";
             treatmentTime = 2;
             requiredMedic = 1;
             callbackProgress = "";
-            callbackSuccess = "[_player, _target] call kat_aceCirculation_fnc_treatmentAdvanced_X";
+            callbackSuccess = "[_player, _target] call keko_medical_circulation_fnc_treatmentAdvanced_X";
             animationCaller = "AinvPknlMstpSnonWnonDnon_medic3";
         };
         class Remove_X_Defibrillator: X_Defibrillator {
-            displayName = $STR_KAT_aceCirculation_X_Action_Remove;
+            displayName = CSTRING(X_Action_Remove);
             items[] = {};
-            condition = "_target getVariable ['kat_aceCirculation_X', true]";
+            condition = "_target getVariable ['keko_medical_circulation_X', true]";
             treatmentTime = 2;
             callbackProgress = "";
-            callbackSuccess = "_target setVariable ['kat_aceCirculation_X', false, true]; _player setVariable ['kat_aceCirculation_use', false, true]";
+            callbackSuccess = "_target setVariable ['keko_medical_circulation_X', false, true]; _player setVariable ['keko_medical_circulation_use', false, true]";
         };
     };
 };
