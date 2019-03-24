@@ -1,2 +1,1 @@
-PREP(handleInit);
 PREP(init);

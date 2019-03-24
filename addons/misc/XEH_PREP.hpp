@@ -5,7 +5,6 @@ PREP(bandageRandomWound);
 PREP(conditionIV);
 PREP(conditionIVstand);
 PREP(getNumOpenWounds);
-PREP(handleInit);
 PREP(init);
 PREP(limitWounds);
 PREP(removeIVbag);

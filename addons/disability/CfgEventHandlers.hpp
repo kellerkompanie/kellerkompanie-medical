@@ -7,8 +7,8 @@ class Extended_PreInit_EventHandlers {
 
 class Extended_Init_EventHandlers {
     class CAManBase {
-        class kat_aceDisability_init {
-            init = "_this call kat_aceDisability_fnc_handleInit";
+        class ADDON {
+            init = QUOTE(_this call COMPILE_FILE(XEH_init));
         };
     };
 };

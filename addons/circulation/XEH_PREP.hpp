@@ -4,7 +4,6 @@ PREP(canCheckDogtag);
 PREP(compatible);
 PREP(getDogtagData);
 PREP(groupID);
-PREP(handleInit);
 PREP(handleTreatment);
 PREP(init);
 PREP(onCloseDialog);

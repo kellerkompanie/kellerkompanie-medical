@@ -1,6 +1,5 @@
 PREP(adjustSpo2);
 PREP(handleBreathing);
-PREP(handleInit);
 PREP(handlePulmoHit);
 PREP(init);
 PREP(treatmentAdvanced_chestSeal);

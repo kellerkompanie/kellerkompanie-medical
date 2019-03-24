@@ -1,19 +1,4 @@
 #include "script_component.hpp"
-/*
- * Author: Katalam
- * Unit Init Handler
- *
- * Arguments:
- * 0: Unit <OBJECT>
- *
- * Return Value:
- * None
- *
- * Example:
- * [player] call kat_aceAirway_fnc_handleInit;
- *
- * Public: No
- */
 
 params ["_unit"];
 
