@@ -1,10 +1,10 @@
 class CfgVehicles {
     class Item_Base_F;
 
-    class KAT_PulseoximeterItem: Item_Base_F {
+    class GVAR(PulseoximeterItem): Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName= "$STR_kat_aceBreathing_Pulseoximeter_Desc_Short";
+        displayName= CSTRING(Pulseoximeter_Desc_Short);
         author = "Katalam";
         vehicleClass = "Items";
         class TransportItems {
@@ -12,14 +12,14 @@ class CfgVehicles {
         };
     };
 
-    class KAT_ChestSealItem: Item_Base_F {
+    class GVAR(ChestSealItem): Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName= "$STR_kat_aceBreathing_chestseal_display";
+        displayName= CSTRING(chestseal_display);
         author = "Katalam";
         vehicleClass = "Items";
         class TransportItems {
-            MACRO_ADDITEM(KAT_ChestSeal,1);
+            MACRO_ADDITEM(GVAR(ChestSeal),1);
         };
     };
 
@@ -29,8 +29,8 @@ class CfgVehicles {
         };
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
         class TransportItems: TransportItems {
-            MACRO_ADDITEM(KAT_Pulseoximeter,3);
-            MACRO_ADDITEM(KAT_ChestSeal,25);
+            MACRO_ADDITEM(GVAR(Pulseoximeter),3);
+            MACRO_ADDITEM(GVAR(ChestSeal),25);
         };
     };
 
@@ -39,7 +39,7 @@ class CfgVehicles {
         class ACE_Actions {
             class ACE_Torso {
                 class ChestSeal {
-                    displayName = $STR_kat_aceBreathing_pneumothorax_display;
+                    displayName = CSTRING(pneumothorax_display);
                     distance = 2.0;
                     condition = "[_player, _target, 'body', 'ChestSeal'] call ace_medical_fnc_canTreatCached";
                     statement = "[_player, _target, 'body', 'ChestSeal'] call ace_medical_fnc_treatment";
@@ -50,7 +50,7 @@ class CfgVehicles {
             };
             class ACE_ArmLeft {
                 class Pulseoximeter {
-                    displayName = $STR_kat_aceBreathing_Pulseoximeter_Display;
+                    displayName = CSTRING(Pulseoximeter_Display);
                     distance = 2.0;
                     condition = "[_player, _target, 'hand_l', 'Pulseoximeter'] call ace_medical_fnc_canTreatCached";
                     statement = "[_player, _target, 'hand_l', 'Pulseoximeter'] call ace_medical_fnc_treatment";
@@ -59,7 +59,7 @@ class CfgVehicles {
                     icon = "";
                 };
                 class RemovePulseoximeter {
-                    displayName = $STR_kat_aceBreathing_Pulseoximeter_Display_Remove;
+                    displayName = CSTRING(Pulseoximeter_Display_Remove);
                     distance = 2.0;
                     condition = "[_player, _target, 'hand_l', 'RemovePulseoximeter'] call ace_medical_fnc_canTreatCached";
                     statement = "[_player, _target, 'hand_l', 'RemovePulseoximeter'] call ace_medical_fnc_treatment";
@@ -70,7 +70,7 @@ class CfgVehicles {
             };
             class ACE_ArmRight {
                 class Pulseoximeter {
-                    displayName = $STR_kat_aceBreathing_Pulseoximeter_Display;
+                    displayName = CSTRING(Pulseoximeter_Display);
                     distance = 2.0;
                     condition = "[_player, _target, 'hand_r', 'Pulseoximeter'] call ace_medical_fnc_canTreatCached";
                     statement = "[_player, _target, 'hand_r', 'Pulseoximeter'] call ace_medical_fnc_treatment";
@@ -79,7 +79,7 @@ class CfgVehicles {
                     icon = "";
                 };
                 class RemovePulseoximeter {
-                    displayName = $STR_kat_aceBreathing_Pulseoximeter_Display_Remove;
+                    displayName = CSTRING(Pulseoximeter_Display_Remove);
                     distance = 2.0;
                     condition = "[_player, _target, 'hand_r', 'RemovePulseoximeter'] call ace_medical_fnc_canTreatCached";
                     statement = "[_player, _target, 'hand_r', 'RemovePulseoximeter'] call ace_medical_fnc_treatment";
@@ -92,7 +92,7 @@ class CfgVehicles {
                 class Medical {
                     class ACE_Torso {
                         class ChestSeal {
-                            displayName = $STR_kat_aceBreathing_pneumothorax_display;
+                            displayName = CSTRING(pneumothorax_display);
                             distance = 2.0;
                             condition = "[_player, _target, 'body', 'ChestSeal'] call ace_medical_fnc_canTreatCached";
                             statement = "[_player, _target, 'body', 'ChestSeal'] call ace_medical_fnc_treatment";
@@ -103,7 +103,7 @@ class CfgVehicles {
                     };
                     class ACE_ArmLeft {
                         class Pulseoximeter {
-                            displayName = $STR_kat_aceBreathing_Pulseoximeter_Display;
+                            displayName = CSTRING(Pulseoximeter_Display);
                             distance = 2.0;
                             condition = "[_player, _target, 'hand_l', 'Pulseoximeter'] call ace_medical_fnc_canTreatCached";
                             statement = "[_player, _target, 'hand_l', 'Pulseoximeter'] call ace_medical_fnc_treatment";
@@ -112,7 +112,7 @@ class CfgVehicles {
                             icon = "";
                         };
                         class RemovePulseoximeter {
-                            displayName = $STR_kat_aceBreathing_Pulseoximeter_Display_Remove;
+                            displayName = CSTRING(Pulseoximeter_Display_Remove);
                             distance = 2.0;
                             condition = "[_player, _target, 'hand_l', 'RemovePulseoximeter'] call ace_medical_fnc_canTreatCached";
                             statement = "[_player, _target, 'hand_l', 'RemovePulseoximeter'] call ace_medical_fnc_treatment";
@@ -123,7 +123,7 @@ class CfgVehicles {
                     };
                     class ACE_ArmRight {
                         class Pulseoximeter {
-                            displayName = $STR_kat_aceBreathing_Pulseoximeter_Display;
+                            displayName = CSTRING(Pulseoximeter_Display);
                             distance = 2.0;
                             condition = "[_player, _target, 'hand_r', 'Pulseoximeter'] call ace_medical_fnc_canTreatCached";
                             statement = "[_player, _target, 'hand_r', 'Pulseoximeter'] call ace_medical_fnc_treatment";
@@ -132,7 +132,7 @@ class CfgVehicles {
                             icon = "";
                         };
                         class RemovePulseoximeter {
-                            displayName = $STR_kat_aceBreathing_Pulseoximeter_Display_Remove;
+                            displayName = CSTRING(Pulseoximeter_Display_Remove);
                             distance = 2.0;
                             condition = "[_player, _target, 'hand_r', 'RemovePulseoximeter'] call ace_medical_fnc_canTreatCached";
                             statement = "[_player, _target, 'hand_r', 'RemovePulseoximeter'] call ace_medical_fnc_treatment";

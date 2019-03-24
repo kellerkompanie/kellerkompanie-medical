@@ -1,18 +1,18 @@
 class ACE_Medical_Actions {
     class Advanced {
         class Pulseoximeter {
-            displayName = $STR_kat_aceBreathing_Pulseoximeter_Display;
-            displayNameProgress = $STR_kat_aceBreathing_placing;
+            displayName = CSTRING(Pulseoximeter_Display);
+            displayNameProgress = CSTRING(placing);
             category = "examine";
             treatmentLocations[] = {"All"};
             allowedSelections[] = {"hand_l", "hand_r"};
             allowSelfTreatment = 0;
             requiredMedic = 1;
             treatmentTime = 2;
-            items[] = {"KAT_Pulseoximeter"};
-            condition = "missionNamespace getVariable 'kat_aceBreathing_enable'";
+            items[] = {QGVAR(Pulseoximeter)};
+            condition = "missionNamespace getVariable 'keko_medical_breathing_enable'";
             patientStateCondition = 0;
-            callbackSuccess = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_pulseoximeter";
+            callbackSuccess = "[_player, _target] call keko_medical_breathing_fnc_treatmentAdvanced_pulseoximeter";
             callbackFailure = "";
             callbackProgress = "";
             itemConsumed = 1;
@@ -26,8 +26,8 @@ class ACE_Medical_Actions {
             litter[] = {};
         };
         class RemovePulseoximeter {
-            displayName = $STR_kat_aceBreathing_Pulseoximeter_Display_Remove;
-            displayNameProgress = $STR_kat_aceBreathing_remove;
+            displayName = CSTRING(Pulseoximeter_Display_Remove);
+            displayNameProgress = CSTRING(remove);
             category = "examine";
             treatmentLocations[] = {"All"};
             allowedSelections[] = {"hand_l", "hand_r"};
@@ -35,9 +35,9 @@ class ACE_Medical_Actions {
             requiredMedic = 1;
             treatmentTime = 2;
             items[] = {};
-            condition = "_target getVariable ['kat_aceBreathing_pulseoximeter', false]";
+            condition = "_target getVariable ['keko_medical_breathing_pulseoximeter', false]";
             patientStateCondition = 0;
-            callbackSuccess = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_removePulseoximeter";
+            callbackSuccess = "[_player, _target] call keko_medical_breathing_fnc_treatmentAdvanced_removePulseoximeter";
             callbackFailure = "";
             callbackProgress = "";
             itemConsumed = 0;
@@ -51,18 +51,18 @@ class ACE_Medical_Actions {
             litter[] = {};
         };
         class ChestSeal {
-            displayName = $STR_kat_aceBreathing_pneumothorax_display;
-            displayNameProgress = $STR_kat_aceBreathing_treating;
+            displayName = CSTRING(pneumothorax_display);
+            displayNameProgress = CSTRING(treating);
             category = "advanced";
             treatmentLocations[] = {"All"};
             allowedSelections[] = {"body"};
             allowSelfTreatment = 0;
             requiredMedic = 2;
             treatmentTime = 7;
-            items[] = {"KAT_ChestSeal"};
+            items[] = {QGVAR(ChestSeal)};
             condition = "_target getVariable ['ace_medical_airwayCollapsed', false]";
             patientStateCondition = 0;
-            callbackSuccess = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_chestSeal";
+            callbackSuccess = "[_player, _target] call keko_medical_breathing_fnc_treatmentAdvanced_chestSeal";
             callbackFailure = "";
             callbackProgress = "";
             itemConsumed = 1;
