@@ -5,18 +5,18 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            "KAT_PulseoximeterItem",
-            "KAT_ChestSealItem"
+            QGVAR(PulseoximeterItem),
+            QGVAR(ChestSealItem)
         };
         weapons[] = {
-            "KAT_Pulseoximeter",
-            "KAT_ChestSeal"
+            QGVAR(Pulseoximeter),
+            QGVAR(ChestSeal)
         };
         magazines[] = {};
         requiredAddons[] = {
             "ace_medical",
-            "kat_aceAirway",
-            "kat_aceCirculation",
+            "keko_medical_airway",
+            "keko_medical_circulation",
             "cba_settings"
         };
         author = ECSTRING(common,Schwaggot);
