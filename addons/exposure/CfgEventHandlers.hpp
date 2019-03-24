@@ -4,3 +4,21 @@ class Extended_PreInit_EventHandlers {
         disableModuload = true;
     };
 };
+
+class Extended_PreInit_EventHandlers {
+    class kat_aceExposure_preInit {
+        init = "call kat_aceExposure_fnc_registerSettings";
+    };
+};
+class Extended_Init_EventHandlers {
+    class CAManBase {
+        class kat_aceExposure_init {
+            init = "_this call kat_aceExposure_fnc_handleInit";
+        };
+    };
+};
+class Extended_PostInit_EventHandlers {
+    class kat_aceExposure_postInit {
+        init = "call kat_aceExposure_fnc_events";
+    };
+};

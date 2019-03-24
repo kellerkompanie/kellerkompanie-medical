@@ -4,3 +4,21 @@ class Extended_PreInit_EventHandlers {
         disableModuload = true;
     };
 };
+
+class Extended_PreInit_EventHandlers {
+    class kat_aceBreathing_preInit {
+        init = "call kat_aceBreathing_fnc_registerSettings";
+    };
+};
+class Extended_Init_EventHandlers {
+    class CAManBase {
+        class kat_aceBreathing_init {
+            init = "_this call kat_aceBreathing_fnc_handleInit";
+        };
+    };
+};
+class Extended_PostInit_EventHandlers {
+    class kat_aceBreathing_postInit {
+        init = "call kat_aceBreathing_fnc_events";
+    };
+};
