@@ -5,8 +5,8 @@ import sys
 import subprocess
 
 ######## GLOBALS #########
-MAINPREFIX = "z"
-PREFIX = "keko_medical"
+MAINPREFIX = "x"
+PREFIX = "keko_medical_"
 ##########################
 
 def mod_time(path):
