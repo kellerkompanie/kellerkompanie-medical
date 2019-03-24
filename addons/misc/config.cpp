@@ -5,8 +5,8 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            "KAT_stretcher",
-            "KAT_stretcher_bag"
+            GVAR(stretcher),
+            GVAR(stretcher_bag)
         };
         weapons[] = { };
         magazines[] = { };
@@ -20,11 +20,6 @@ class CfgPatches {
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };
-};
-
-#define MACRO_ADDITEM(ITEM,COUNT) class _xx_##ITEM { \
-    name = #ITEM; \
-    count = COUNT; \
 };
 
 #include "CfgMoves.hpp"

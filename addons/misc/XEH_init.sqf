@@ -2,4 +2,4 @@
 
 params ["_unit"];
 
-_unit call kat_aceMisc_fnc_init;
+_unit call FUNC(init);

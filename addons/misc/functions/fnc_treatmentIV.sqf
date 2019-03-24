@@ -30,5 +30,5 @@ switch (_className) do {
         _value = 250;
     };
 };
-[_player, _value] call kat_aceMisc_fnc_removeIVbag;
+[_player, _value] call FUNC(removeIVbag);
 [_player, _target, _selectionName, _className, _item] call ace_medical_fnc_treatmentIV;

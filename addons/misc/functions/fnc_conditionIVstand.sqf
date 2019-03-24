@@ -20,7 +20,7 @@
      ["_classname", "ACE_salineIV", [""]]
  ];
 
-if !(kat_aceMisc_enable) exitWith {false};
+if !(GVAR(enable)) exitWith {false};
 
 if ([_player] call ace_medical_fnc_isMedic && _classname in items _player) exitWith {true};
 false;

@@ -21,11 +21,11 @@ params [
     ["_ml", 1000, [0]]
 ];
 
-if !(kat_aceMisc_enable) exitWith {false};
+if !(GVAR(enable)) exitWith {false};
 
 private _object = nearestObjects [_player, ['Land_IntravenStand_01_1bag_F', 'Land_IntravenStand_01_2bags_F'], 10, false];
 if (isNil "_object") exitWith {false};
-_object = _object select {_ml in (_x getVariable ["kat_aceMisc_stand", []])};
+_object = _object select {_ml in (_x getVariable [QGVAR(stand), []])};
 if (isNil "_object") exitWith {false};
 _object = _object select 0;
 if (_object distance _player <= 10) exitWith {true};

@@ -10,9 +10,9 @@ PREP_RECOMPILE_END;
 
 //Enable aceExposure things
 [
-    "kat_aceExposure_enable",
+    QGVAR(enable),
     "CHECKBOX",
-    localize "STR_kat_aceExposure_SETTING_ENABLE",
+    localize LSTRING(SETTING_ENABLE),
     CBA_SETTINGS_CAT,
     [true],
     true
