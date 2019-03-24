@@ -3,10 +3,10 @@ class CfgFunctions {
         tag = "ace_dogtags";
         class ace_dogtags {
             class getDogtagData {
-                file = QPATHTOF(functions\fn_getDogtagData.sqf);
+                file = QPATHTOF(functions\fnc_getDogtagData.sqf);
             };
             class canCheckDogtag {
-                file = QPATHTOF(functions\fn_canCheckDogtag.sqf);
+                file = QPATHTOF(functions\fnc_canCheckDogtag.sqf);
             };
         };
     };
