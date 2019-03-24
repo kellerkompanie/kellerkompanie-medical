@@ -1,19 +1,23 @@
-#include "BIS_AddonInfo.hpp"
+#include "script_component.hpp"
+
 class CfgPatches {
-    class kat_usaf {
-        units[] = {};
-        weapons[] = {};
-        requiredVersion = 1.80;
-        requiredAddons[] = {
-            "kat_aceMisc"
+    class ADDON    {
+        name = COMPONENT_NAME;
+        requiredVersion = REQUIRED_VERSION;
+        units[] = {
+            GVAR(stretcher),
+            GVAR(stretcher_bag)
         };
-        version = "0.1";
-        versionStr = "0.1";
-        author = "Katalam";
-        authorUrl = "https://github.com/Katalam/kat_aceAdvMedical";
+        weapons[] = { };
+        magazines[] = { };
+        requiredAddons[] = {
+            "keko_medical_misc" // TODO add RHS USAF dependency
+        };
+        author = ECSTRING(common,Schwaggot);
+        authors[] = {"Schwaggot"};
+        url = ECSTRING(main,URL);
+        VERSION_CONFIG;
     };
 };
 
-class cfgVehicles {
-    #include "vehicle_stretcher.hpp"
-};
+#include "CfgVehicles.hpp"
