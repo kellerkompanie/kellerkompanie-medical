@@ -43,7 +43,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(probability_obstruction),
     "SLIDER",
-    localize LSTRIGN(SETTING_obstruction),
+    localize LSTRING(SETTING_obstruction),
     CBA_SETTINGS_CAT,
     [0, 100, 20, 0],
     true
