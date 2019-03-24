@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="keko_medical">
+    <Package name="burns">
+        <Key ID="STR_keko_medical_burns_progress">
+            <English>Applying sterile gauze bandage...</English>
+            <German>Steriler Wunderverband wird angelegt...</German>
+        </Key>
+        <Key ID="STR_keko_medical_burns_action">
+            <English>Sterile Gauze</English>
+            <German>Steriler Wundverband</German>
+        </Key>
+        <Key ID="STR_keko_medical_burns_applied">
+            <English>%1 applied sterile gauze bandage</English>
+            <German>%1 hat sterilen Wunderverband angelegt</German>
+        </Key>
+        <Key ID="STR_keko_medical_burns_displayName">
+            <English>Sterile Gauze Bandage</English>
+            <German>Steriler Wundverband</German>
+        </Key>
+        <Key ID="STR_keko_medical_burns_displayNameUsed">
+            <English>Sterile Gauze Bandage (Used)</English>
+            <German>Steriler Wundverband (Benutzt)</German>
+        </Key>
+        <Key ID="STR_keko_medical_burns_desc">
+            <English>A sterile gauze bandage used to treat burn wounds.</English>
+            <German>Ein steriler Wunderverband um Brandwunden zu behandeln.</German>
+        </Key>
+        <Key ID="STR_keko_medical_burns_actionCheckLimbs">
+            <English>Patient %1 %2 &lt;br/&gt; %1 %3</English>
+            <German>Patient %1 %2 &lt;br/&gt; %1 %3</German>
+        </Key>
+        <Key ID="STR_keko_medical_burns_burnWound">
+            <English>Burn</English>
+            <German>Verbrennung</German>
+        </Key>
+        <Key ID="STR_keko_medical_burns_burnWoundMinor">
+            <English>Small Burn</English>
+            <German>Leichte Verbrennung</German>
+        </Key>
+        <Key ID="STR_keko_medical_burns_burnWoundMedium">
+            <English>Medium Burn</English>
+            <German>Mittlere Verbrennung</German>
+        </Key>
+        <Key ID="STR_keko_medical_burns_burnWoundLarge">
+            <English>Large Burn</English>
+            <German>Starke Verbrennung</German>
+        </Key>
+	</Package>
+</Project>
