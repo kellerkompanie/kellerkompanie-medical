@@ -5,8 +5,8 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            GVAR(stretcher),
-            GVAR(stretcher_bag)
+            keko_stretcher,
+            keko_stretcherBag
         };
         weapons[] = { };
         magazines[] = { };

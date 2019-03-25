@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_aceBreathing_fnc_treatmentAdvanced_chestSealLocal;
+ * [player, cursorTarget] call keko_medical_breathing_fnc_treatmentAdvanced_chestSealLocal;
  *
  * Public: No
  */

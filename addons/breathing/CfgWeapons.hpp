@@ -2,7 +2,7 @@ class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
 
-    class GVAR(Pulseoximeter): ACE_ItemCore {
+    class keko_pulseOximeter: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
         displayName= CSTRING(Pulseoximeter_Desc_Short);
@@ -14,7 +14,7 @@ class CfgWeapons {
             mass = 1;
         };
     };
-    class GVAR(ChestSeal): ACE_ItemCore {
+    class keko_chestSeal: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
         displayName= CSTRING(chestseal_display);

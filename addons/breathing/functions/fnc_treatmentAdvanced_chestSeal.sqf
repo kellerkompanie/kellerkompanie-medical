@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * call kat_aceBreathing_fnc_treatmentAdvanced_chestSeal;
+ * call keko_medical_breathing_fnc_treatmentAdvanced_chestSeal;
  *
  * Public: No
  */

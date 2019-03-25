@@ -9,7 +9,7 @@ class ACE_Medical_Actions {
             allowSelfTreatment = 0;
             requiredMedic = 1;
             treatmentTime = 2;
-            items[] = {QGVAR(Pulseoximeter)};
+            items[] = {"keko_pulseOximeter"};
             condition = "missionNamespace getVariable 'keko_medical_breathing_enable'";
             patientStateCondition = 0;
             callbackSuccess = "[_player, _target] call keko_medical_breathing_fnc_treatmentAdvanced_pulseoximeter";
@@ -59,7 +59,7 @@ class ACE_Medical_Actions {
             allowSelfTreatment = 0;
             requiredMedic = 2;
             treatmentTime = 7;
-            items[] = {QGVAR(ChestSeal)};
+            items[] = {"keko_chestSeal"};
             condition = "_target getVariable ['ace_medical_airwayCollapsed', false]";
             patientStateCondition = 0;
             callbackSuccess = "[_player, _target] call keko_medical_breathing_fnc_treatmentAdvanced_chestSeal";

@@ -1,39 +1,39 @@
 class CfgVehicles {
     class Item_Base_F;
 
-    class GVAR(larynxItem): Item_Base_F {
+    class keko_larynxItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
         displayName= CSTRING(Larynx_Display);
         author = "Katalam";
         vehicleClass = "Items";
         class TransportItems {
-            MACRO_ADDITEM(KAT_larynx,1);
+            MACRO_ADDITEM(keko_larynx,1);
         };
     };
-    class GVAR(guedelItem): Item_Base_F {
+    class keko_guedelItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
         displayName= CSTRING(Guedel_Display);
         author = "Katalam";
         vehicleClass = "Items";
         class TransportItems {
-            MACRO_ADDITEM(KAT_guedel,1);
+            MACRO_ADDITEM(keko_guedel,1);
         };
     };
-    class GVAR(accuvacItem): Item_Base_F {
+    class keko_accuvacItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
         displayName= "Accuvac";
         author = "Katalam";
         vehicleClass = "Items";
         class TransportItems {
-            MACRO_ADDITEM(KAT_accuvac,1);
+            MACRO_ADDITEM(keko_accuvac,1);
         };
     };
     class BloodSplatter_01_Small_Old_F;
-    class GVAR(vomit): BloodSplatter_01_Small_Old_F {
-        displayName = $STR_kat_aceAirway_Vomit_Display;
+    class keko_vomit: BloodSplatter_01_Small_Old_F {
+        displayName = CSTRING(Vomit_Display);
         hiddenSelectionsTextures[] = {QPATHTOF(ui\vomit.paa)};
     };
 
@@ -43,9 +43,9 @@ class CfgVehicles {
     };
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
         class TransportItems: TransportItems {
-            MACRO_ADDITEM(GVAR(larynx),15);
-            MACRO_ADDITEM(GVAR(guedel),15);
-            MACRO_ADDITEM(GVAR(accuvac),1);
+            MACRO_ADDITEM(keko_larynx,15);
+            MACRO_ADDITEM(keko_guedel,15);
+            MACRO_ADDITEM(keko_accuvac,1);
         };
     };
 
@@ -125,7 +125,7 @@ class CfgVehicles {
                                 icon = QPATHTOF(ui\larynx.paa);
                             };
                             class Guedeltubus: Larynxtubus {
-                                displayName = "$STR_kat_aceAirway_Guedel_Display";
+                                displayName = CSTRING(Guedel_Display);
                                 condition = "[_player, _target, 'head', 'Guedeltubus'] call ace_medical_fnc_canTreatCached";
                                 statement = "[_player, _target, 'head', 'Guedeltubus'] call ace_medical_fnc_treatment";
                                 exceptions[] = {""};

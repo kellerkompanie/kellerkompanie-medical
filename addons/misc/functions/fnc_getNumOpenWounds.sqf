@@ -10,7 +10,7 @@
  * 0: Open unbandaged wounds <NUMBER>
  *
  * Example:
- * [cursorTarget] call kat_aceMisc_fnc_getNumOpenWounds;
+ * [cursorTarget] call keko_medical_misc_fnc_getNumOpenWounds;
  *
  * Public: No
  */

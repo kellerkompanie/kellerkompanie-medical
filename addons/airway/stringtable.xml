@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="keko_medical">
     <Package name="airway">
-        <Key ID="STR_kat_URL">
-            <English>https://github.com/Katalam/kat_aceAdvMedical</English>
-            <German>https://github.com/Katalam/kat_aceAdvMedical</German>
-        </Key>
         <Key ID="STR_keko_medical_airway_SETTING_ENABLE">
             <English>ACE-Airway injuries activated?</English>
             <German>ACE-Atemwegverletzungen aktiviert?</German>

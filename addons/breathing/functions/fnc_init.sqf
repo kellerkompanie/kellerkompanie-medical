@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [bob] call kat_aceBreathing_fnc_init
+ * [bob] call keko_medical_breathing_fnc_init
  *
  * Public: No
  */

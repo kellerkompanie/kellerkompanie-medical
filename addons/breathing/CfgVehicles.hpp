@@ -1,25 +1,25 @@
 class CfgVehicles {
     class Item_Base_F;
 
-    class GVAR(PulseoximeterItem): Item_Base_F {
+    class keko_pulseOximeterItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
         displayName= CSTRING(Pulseoximeter_Desc_Short);
         author = "Katalam";
         vehicleClass = "Items";
         class TransportItems {
-            MACRO_ADDITEM(KAT_Pulseoximeter,1);
+            MACRO_ADDITEM(keko_pulseoximeter,1);
         };
     };
 
-    class GVAR(ChestSealItem): Item_Base_F {
+    class keko_chestSealItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
         displayName= CSTRING(chestseal_display);
         author = "Katalam";
         vehicleClass = "Items";
         class TransportItems {
-            MACRO_ADDITEM(GVAR(ChestSeal),1);
+            MACRO_ADDITEM(keko_chestSeal,1);
         };
     };
 
@@ -29,8 +29,8 @@ class CfgVehicles {
         };
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
         class TransportItems: TransportItems {
-            MACRO_ADDITEM(GVAR(Pulseoximeter),3);
-            MACRO_ADDITEM(GVAR(ChestSeal),25);
+            MACRO_ADDITEM(keko_pulseOximeter,3);
+            MACRO_ADDITEM(keko_chestSeal,25);
         };
     };
 

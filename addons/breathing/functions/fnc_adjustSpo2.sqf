@@ -12,7 +12,7 @@
  * 0: New value <NUMBER>
  *
  * Example:
- * [cursorTarget, 5, true] call kat_aceBreathing_fnc_adjustSp02;
+ * [cursorTarget, 5, true] call keko_medical_breathing_fnc_adjustSp02;
  *
  * Public: No
  */

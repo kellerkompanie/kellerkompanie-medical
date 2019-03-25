@@ -46,10 +46,10 @@ class CfgVehicles {
     };
 
     class weapon_bag_base;
-    class GVAR(stretcher_bag): weapon_bag_base {
+    class keko_stretcherBag): weapon_bag_base {
         class assembleInfo {
             displayName = "Stretcher";
-            assembleTo = QGVAR(stretcher);
+            assembleTo = "keko_stretcher";
             base = "";
             primary = 1;
             dissasembleTo[] = {};
@@ -63,7 +63,7 @@ class CfgVehicles {
     };
 
     class Tank_F;
-    class GVAR(stretcher): Tank_F {
+    class keko_stretcher: Tank_F {
         explosionEffect = "";
         fuelExplosionPower = 0;
         editorForceEmpty = 1;
@@ -86,7 +86,7 @@ class CfgVehicles {
         allowTabLock = 0;
         memoryPointsGetInCargo = "pos cargo";
         memoryPointsGetInCargoDir = "pos cargo dir";
-        cargoAction[] = {QGVAR(stretcher)};
+        cargoAction[] = {"keko_stretcher"};
         tf_isolatedAmount = 0;
         numberPhysicalWheels = 0;
         hideProxyInCombat = 0;

@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_aceMisc_fnc_bandageRandomWound;
+ * [cursorTarget] call keko_medical_misc_fnc_bandageRandomWound;
  *
  * Public: No
  */

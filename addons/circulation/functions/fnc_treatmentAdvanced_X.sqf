@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_aceCirculation_fnc_treatmentAdvanced_X;
+ * [player, cursorTarget] call keko_medical_circulation_fnc_treatmentAdvanced_X;
  *
  * Public: No
  */

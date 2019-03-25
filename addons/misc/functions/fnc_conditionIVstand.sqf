@@ -10,7 +10,7 @@
  * Cann add IV bag <BOOLEAN>
  *
  * Example:
- * [player] call kat_aceMisc_fnc_conditionIVstand;
+ * [player] call keko_medical_misc_fnc_conditionIVstand;
  *
  * Public: No
  */

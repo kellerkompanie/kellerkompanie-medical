@@ -1,7 +1,7 @@
 class CfgHints {
     class ADDON {
         displayName = "Kellerkompanie Medical";
-        class KAT_Airway    {
+        class GVAR(Airway) {
             displayName = CSTRING(hint_name);
             description = CSTRING(hint_desc);
             tip = "";

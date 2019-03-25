@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [cursorTarget, "quick_view", "STR_kat_aceBreathing_pulseoxi_Log"] call kat_aceCirculation_fnc_removeLog;
+ * [cursorTarget, "quick_view", "STR_keko_medical_breathing_pulseoxi_Log"] call keko_medical_circulation_fnc_removeLog;
  *
  * Public: No
  */

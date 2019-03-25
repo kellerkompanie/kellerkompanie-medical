@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player, 500] call kat_aceMisc_fnc_removeIVbag;
+ * [player, 500] call keko_medical_misc_fnc_removeIVbag;
  *
  * Public: No
  */

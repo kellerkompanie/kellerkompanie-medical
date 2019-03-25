@@ -11,7 +11,7 @@
  * 0: Allowed <BOOLEAN>
  *
  * Example:
- * [player, 1000] call kat_aceMisc_fnc_conditionIV;
+ * [player, 1000] call keko_medical_misc_fnc_conditionIV;
  *
  * Public: No
  */

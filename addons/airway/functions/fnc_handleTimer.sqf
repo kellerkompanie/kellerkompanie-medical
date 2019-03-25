@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, CBA_missionTime] call kat_aceAirway_fnc_handleTimer;
+ * [player, CBA_missionTime] call keko_medical_airway_fnc_handleTimer;
  *
  * Public: No
  */

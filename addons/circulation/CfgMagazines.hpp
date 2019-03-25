@@ -1,7 +1,7 @@
 class CfgMagazines {
     class CA_Magazine;
 
-    class GVAR(Painkiller): CA_Magazine {
+    class keko_painkiller: CA_Magazine {
         author = "Katalam";
         scope = 2;
 

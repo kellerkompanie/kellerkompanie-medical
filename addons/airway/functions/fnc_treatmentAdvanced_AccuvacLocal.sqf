@@ -11,7 +11,7 @@
  * Succesful treatment <BOOL>
  *
  * Example:
- * [player, "Accuvac"] call kat_aceAirway_fnc_treatmentAdvanced_accuvacLocal;
+ * [player, "Accuvac"] call keko_medical_airway_fnc_treatmentAdvanced_accuvacLocal;
  *
  * Public: No
  */

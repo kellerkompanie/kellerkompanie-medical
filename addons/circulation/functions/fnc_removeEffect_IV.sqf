@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_aceCirculation_fnc_removeEffect_IV;
+ * [player] call keko_medical_circulation_fnc_removeEffect_IV;
  *
  * Public: No
  */

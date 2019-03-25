@@ -10,21 +10,21 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_aceMisc_fnc_stretcher;
+ * [cursorTarget] call keko_medical_misc_fnc_stretcher;
  *
  * Public: No
  */
 
 params [["_object", objNull, [objNull]]];
 
-if !(_object isKindOf QGVAR(stretcher)) exitWith {false};
+if !(_object isKindOf "keko_stretcher") exitWith {false};
 
 [_object] call ace_dragging_fnc_initObject;
 
 [_object, 0, ["ACE_MainActions"],
     [QGVAR(disassemble), localize LSTRING(disassemble_stretcher_display), "", {
         params [["_object", objNull, [objNull]]];
-        QGVAR(stretcher_bag) createVehicle (getPos _object);
+        "keko_stretcherBag" createVehicle (getPos _object); // TODO create at exact position
         deleteVehicle _object;
     }, {
         params [["_object", objNull, [objNull]]];

@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_aceAirway_fnc_handleAirway;
+ * [player] call keko_medical_airway_fnc_handleAirway;
  *
  * Public: No
  */

@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_aceAirway_fnc_accuvacSound;
+ * [player, cursorTarget] call keko_medical_airway_fnc_accuvacSound;
  *
  * Public: No
  */

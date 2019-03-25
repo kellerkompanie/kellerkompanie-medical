@@ -37,7 +37,7 @@ class ACE_Medical_Actions {
         class X_Defibrillator: CPR {
             displayName = CSTRING(X_Action_Use);
             displayNameProgress = CSTRING(X_Action_Progress);
-            items[] = {"KAT_X_AED"};
+            items[] = {"keko_X_AED"};
             condition = "!(_player getVariable ['keko_medical_circulation_use',false])";
             treatmentTime = 2;
             requiredMedic = 1;

@@ -5,12 +5,12 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            QGVAR(PulseoximeterItem),
-            QGVAR(ChestSealItem)
+            keko_pulseOximeterItem,
+            keko_chestSealItem
         };
         weapons[] = {
-            QGVAR(Pulseoximeter),
-            QGVAR(ChestSeal)
+            keko_pulseOximeter,
+            keko_chestSeal
         };
         magazines[] = {};
         requiredAddons[] = {

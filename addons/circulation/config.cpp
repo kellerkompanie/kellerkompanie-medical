@@ -5,27 +5,27 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            GVAR(PainkillerItem),
-            GVAR(X_AEDItem),
-            GVAR(medicalSupplyCrate)
+            keko_painkillerItem,
+            keko_X_AEDItem,
+            keko_bloodBankCrate
         };
         weapons[] = {
-            GVAR(Painkiller),
-            GVAR(bloodIV_O),
-            GVAR(bloodIV_A),
-            GVAR(bloodIV_B),
-            GVAR(bloodIV_AB),
-            GVAR(bloodIV_O_500),
-            GVAR(bloodIV_A_500),
-            GVAR(bloodIV_B_500),
-            GVAR(bloodIV_AB_500),
-            GVAR(bloodIV_O_250),
-            GVAR(bloodIV_A_250),
-            GVAR(bloodIV_B_250),
-            GVAR(bloodIV_AB_250),
-            GVAR(Painkiller_Item),
-            GVAR(X_AED),
-            GVAR(CrossPanel)
+            keko_painkiller,
+            keko_bloodIV_O,
+            keko_bloodIV_A,
+            keko_bloodIV_B,
+            keko_bloodIV_AB,
+            keko_bloodIV_O_500,
+            keko_bloodIV_A_500,
+            keko_bloodIV_B_500,
+            keko_bloodIV_AB_500,
+            keko_bloodIV_O_250,
+            keko_bloodIV_A_250,
+            keko_bloodIV_B_250,
+            keko_bloodIV_AB_250,
+            keko_painkillerItem,
+            keko_X_AED,
+            keko_crossPanel
         };
         magazines[] = { };
         requiredAddons[] = {

@@ -2,7 +2,7 @@ class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
 
-    class GVAR(larynx): ACE_ItemCore {
+    class keko_larynx: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
         displayName= CSTRING(Larynx_Display);
@@ -14,7 +14,7 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
-    class GVAR(guedel): ACE_ItemCore {
+    class keko_guedel: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
         displayName= CSTRING(Guedel_Display);
@@ -26,7 +26,7 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
-    class GVAR(accuvac): ACE_ItemCore {
+    class keko_accuvac: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
         displayName= "Accuvac";

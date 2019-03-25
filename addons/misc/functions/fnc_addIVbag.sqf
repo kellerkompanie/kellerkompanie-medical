@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [cursorTarget, player] call kat_aceMisc_fnc_addIVbag;
+ * [cursorTarget, player] call keko_medical_misc_fnc_addIVbag;
  *
  * Public: No
  */

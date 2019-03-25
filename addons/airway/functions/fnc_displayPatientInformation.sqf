@@ -99,7 +99,7 @@ if (_show) then {
 
         // EDIT by Katalam
         if (_target getVariable ["ace_medical_airwayCollapsed", false] && _selectionN isEqualTo 1) then {
-            _genericMessages pushback [localize "STR_kat_aceBreathing_pneumothorax_mm", [1,1,1,1]];
+            _genericMessages pushback [localize LSTRING(pneumothorax_mm), [1,1,1,1]];
         };
         // END of EDIT
 

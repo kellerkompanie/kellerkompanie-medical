@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [cursorTarget, "body", 1, ""] call kat_aceBreathing_fnc_handlePulmoHit;
+ * [cursorTarget, "body", 1, ""] call keko_medical_breathing_fnc_handlePulmoHit;
  *
  * Public: No
  */

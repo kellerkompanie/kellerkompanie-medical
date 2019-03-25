@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_aceAirway_fnc_handlePuking;
+ * [player] call keko_medical_airway_fnc_handlePuking;
  *
  * Public: No
  */
@@ -26,7 +26,7 @@ if !(GVAR(enable)) exitWith {};
     if (!_alive || (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "larynx")) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
-    if (random(100) <= kat_aceAirway_probability_occluded) then {
+    if (random(100) <= GVAR(probability_occluded)) then {
         if !(_unit getVariable ["ace_medical_airwayOccluded", false]) then {
             _unit setVariable ["ace_medical_airwayOccluded", true, true];
             if (GVAR(checkbox_puking_sound)) then {

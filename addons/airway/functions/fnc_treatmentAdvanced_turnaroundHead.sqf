@@ -11,7 +11,7 @@
  * Succesful treatment <BOOL>
  *
  * Example:
- * [player, cursorTarget] call kat_aceAirway_fnc_treatmentAdvanced_turnaroundHead;
+ * [player, cursorTarget] call keko_medical_airway_fnc_treatmentAdvanced_turnaroundHead;
  *
  * Public: No
  */

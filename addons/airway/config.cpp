@@ -5,15 +5,15 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            GVAR(guedelItem),
-            GVAR(larynxItem),
-            GVAR(accuvacItem),
-            GVAR(vomit)
+            keko_guedelItem,
+            keko_larynxItem,
+            keko_accuvacItem,
+            keko_vomit
         };
         weapons[] = {
-            GVAR(guedel),
-            GVAR(larynx),
-            GVAR(accuvac)
+            keko_guedel,
+            keko_larynx,
+            keko_accuvac
         };
         magazines[] = {};
         requiredAddons[] = {

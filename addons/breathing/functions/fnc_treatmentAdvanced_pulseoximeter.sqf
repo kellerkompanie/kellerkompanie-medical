@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * call kat_aceBreathing_fnc_treatmentAdvanced_pulseoximeter;
+ * call keko_medical_breathing_fnc_treatmentAdvanced_pulseoximeter;
  *
  * Public: No
  */

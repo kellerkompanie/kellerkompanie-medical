@@ -12,7 +12,7 @@
  * Succesful treatment started <BOOL>
  *
  * Example:
- * [player, cursorTarget, "Larynxtubus"] call kat_aceAirway_fnc_treatmentAdvanced_airway;
+ * [player, cursorTarget, "Larynxtubus"] call keko_medical_airway_fnc_treatmentAdvanced_airway;
  *
  * Public: No
  */

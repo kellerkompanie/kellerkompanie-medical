@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * ['KAT_Painkillers', player, cursorTarget, 'head', 'Painkillers'] call kat_aceCirculation_fnc_removeItemfromMag;
+ * ['keko_painkillers', player, cursorTarget, 'head', 'Painkillers'] call keko_medical_circulation_fnc_removeItemfromMag;
  *
  * Public: No
  */

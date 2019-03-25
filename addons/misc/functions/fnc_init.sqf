@@ -10,11 +10,9 @@
  * None
  *
  * Example:
- * [player] call kat_aceMisc_fnc_init;
+ * [player] call keko_medical_misc_fnc_init;
  *
  * Public: No
  */
 
 params ["_unit"];
-
-//_unit setVariable ["kat_aceMisc_X", "X", true];

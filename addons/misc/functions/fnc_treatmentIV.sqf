@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget, 'hand_r', 'SalineIV'] call kat_aceMisc_fnc_treatmentIV;
+ * [player, cursorTarget, 'hand_r', 'SalineIV'] call keko_medical_misc_fnc_treatmentIV;
  *
  * Public: No
  */

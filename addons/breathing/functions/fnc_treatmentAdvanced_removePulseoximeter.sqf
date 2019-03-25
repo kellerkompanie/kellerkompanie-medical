@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * call kat_aceBreathing_fnc_treatmentAdvanced_removePulseoximeter;
+ * call keko_medical_breathing_fnc_treatmentAdvanced_removePulseoximeter;
  *
  * Public: No
  */
@@ -20,9 +20,9 @@ params ["_player", "_target"];
 
 _target setVariable [QGVAR(pulseoximeter), false, true];
 
-if (_player canAdd QGVAR(Pulseoximeter)) then {
-    _player addItem QGVAR(Pulseoximeter);
+if (_player canAdd "keko_pulseOximeter") then {
+    _player addItem "keko_pulseOximeter";
 } else {
     private _groundHolder = createVehicle ["WeaponHolderSimulated", _target, [], 0.5, "CAN_COLLIDE"];
-    _groundHolder addItemCargoGlobal [QGVAR(Pulseoximeter), 1];
+    _groundHolder addItemCargoGlobal ["keko_pulseOximeter", 1];
 };
