@@ -11,6 +11,7 @@ class CfgPatches {
         weapons[] = { };
         magazines[] = { };
         requiredAddons[] = {
+            "keko_medical_main",
             "ace_medical",
             "cba_settings",
             "A3_Static_F"

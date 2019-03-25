@@ -30,7 +30,7 @@ class ACE_Medical_Actions {
         #include "Blood_Medical.hpp"
 
         class Defibrillator: CPR {
-            items[] = {{"adv_aceCPR_AED", QGVAR(AED)}};
+            items[] = {{"keko_AED", "keko_X_AED"}};
             treatmentTime = 10;
             callbackProgress = "call keko_medical_circulation_fnc_AED_sound";
         };

@@ -2,7 +2,7 @@ class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
     class ACE_bloodIV;
-    class adv_aceCPR_AED;
+    class keko_AED;
 
     class keko_bloodIV_O: ACE_bloodIV {
         displayName = CSTRING(BloodIV_O);
@@ -50,7 +50,7 @@ class CfgWeapons {
             mass = 0;
         };
     };
-    class keko_X_AED: Adv_aceCPR_AED {
+    class keko_X_AED: keko_AED {
         scope = 2;
         author = "Katalam";
         displayName = CSTRING(X_Display);

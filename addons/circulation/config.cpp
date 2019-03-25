@@ -31,8 +31,9 @@ class CfgPatches {
         requiredAddons[] = {
             "ace_medical",
             "ace_dogtags",
-            "adv_aceCPR",
-            "cba_settings"
+            "cba_settings",
+            "keko_medical_main",
+            "keko_medical_cpr"
         };
         author = ECSTRING(common,Schwaggot);
         authors[] = {"Schwaggot"};

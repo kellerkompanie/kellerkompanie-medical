@@ -15,6 +15,7 @@ class CfgPatches {
         magazines[] = {};
         requiredAddons[] = {
             "ace_medical",
+            "keko_medical_main",
             "keko_medical_airway",
             "keko_medical_circulation",
             "cba_settings"

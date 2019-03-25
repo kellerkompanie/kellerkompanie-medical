@@ -18,7 +18,8 @@ class CfgPatches {
         magazines[] = {};
         requiredAddons[] = {
             "ace_medical",
-            "cba_settings"
+            "cba_settings",
+            "keko_medical_main"
         };
         author = ECSTRING(common,Schwaggot);
         authors[] = {"Schwaggot"};

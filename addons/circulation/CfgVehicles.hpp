@@ -1,6 +1,6 @@
 class CfgVehicles {
     class WeaponHolder_Single_limited_item_F;
-    class adv_aceCPR_AEDItem;
+    class keko_AEDItem;
     class NATO_Box_Base;
     class ACE_medicalSupplyCrate: NATO_Box_Base {
         class TransportItems;
@@ -17,7 +17,7 @@ class CfgVehicles {
             MACRO_ADDITEM(keko_painkiller,1);
         };
     };
-    class keko_X_AEDItem: adv_aceCPR_AEDItem {
+    class keko_X_AEDItem: keko_AEDItem {
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(X_Display);

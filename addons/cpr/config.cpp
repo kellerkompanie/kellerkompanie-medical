@@ -12,6 +12,7 @@ class CfgPatches {
         };
         magazines[] = {};
         requiredAddons[] = {
+            "keko_medical_main",
             "ace_medical",
             "cba_settings"
         };
