@@ -50,7 +50,7 @@ class CfgPatches {
 #define MACRO_ADDMAGAZINE(MAGAZINE,COUNT) class _xx_##MAGAZINE { \
     magazine = #MAGAZINE; \
     count = COUNT; \
-};
+}
 
 #include "CfgFunctions.hpp"
 #include "CfgEventHandlers.hpp"
