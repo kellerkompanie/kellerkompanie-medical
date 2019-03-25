@@ -27,6 +27,11 @@ class CfgPatches {
     };
 };
 
+#define MACRO_ADDITEM(ITEM,COUNT) class _xx_##ITEM { \
+    name = #ITEM; \
+    count = COUNT; \
+};
+
 #include "CfgSounds.hpp"
 #include "CfgHints.hpp"
 #include "CfgFunctions.hpp"
