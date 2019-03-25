@@ -1,0 +1,16 @@
+PREP(actionCheckPulseLocal);
+PREP(addTime);
+PREP(AED_action);
+PREP(AED_countUses);
+PREP(AED_local);
+PREP(AED_sound);
+PREP(AED_station_condition);
+PREP(CPR_action);
+PREP(CPR_local);
+PREP(createAEDstations);
+PREP(diag);
+PREP(getBloodLoss);
+PREP(getList);
+PREP(isResurrectable);
+PREP(probability);
+PREP(useAEDStation);

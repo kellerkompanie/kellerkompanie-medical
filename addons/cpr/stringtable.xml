@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="keko_medical">
+    <Package name="cpr">
+        <Key ID="STR_keko_medical_cpr_CPR_EXECUTE">
+            <English>%1 performed CPR</English>
+            <German>%1 hat eine HLW durchgeführt</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_CPR_COMPLETED">
+            <English>%1 performed CPR and stabilized the patient</English>
+            <German>%1 hat HLW durchgeführt und den Patienten stabilisiert</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_CPR_FATAL">
+            <English>%1 performed CPR - but the patient will not wake up</English>
+            <German>%1 hat HLW durchgeführt - der Patient ist nicht mehr zu retten</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_AED_EXECUTE">
+            <English>%1 used the Defibrillator</English>
+            <German>%1 hat den Defibrillator genutzt</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_AED_DISPLAYNAME">
+            <English>Automated External Defibrillator</English>
+            <German>Automatisierter Externer Defibrillator</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_AED_USED_DISPLAYNAME">
+            <English>Automated External Defibrillator (depleted)</English>
+            <German>Automatisierter Externer Defibrillator (leer)</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_AEDSTATION_DISPLAYNAME">
+            <English>Manual External Defibrillator</English>
+            <German>Manueller Externer Defibrillator</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_AED_DESCRIPTION">
+            <English>Use to resuscitate player</English>
+            <German>Stellt Puls wieder her</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_AED_ACTION">
+            <English>Use Defibrillator</English>
+            <German>Benutze Defibrillator</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_AED_STATION_ACTION">
+            <English>Activate Defibrillator</English>
+            <German>Aktiviere Defibrillator</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_AED_STATION_HINT_ON">
+            <English>You can use the Defibrillator during the next 12 seconds.</English>
+            <German>Der Defibrillator kann in den nächsten 12 Sekunden eingesetzt werden.</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_AED_STATION_HINT_OFF">
+            <English>Defibrillator deactivated.</English>
+            <German>Defibrillator deaktiviert.</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_AED_PROGRESS">
+            <English>Using the defibrillator...</English>
+            <German>Setze Defibrillator ein...</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_AED_COMPLETED">
+            <English>%1 used the Defibrillator and stabilized the patient</English>
+            <German>%1 hat den Patienten mit Defibrillator stabilisiert</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_SETTING_ENABLE">
+            <English>ENABLE ACE CPR</English>
+            <German>ACE CPR aktivieren</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_SETTING_ADDTIME">
+            <English>Seconds added to revive timer (+/-3 seconds)</English>
+            <German>Hinzugefügte Revive-Zeit (+/-3 Sekunden)</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_SETTING_MAXTIME">
+            <English>Maximum time for successful CPR</English>
+            <German>Maximale Zeit für erfolgreiche CPR</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_SETTING_CHANCE_2">
+            <English>CPR-chance for ACE doctors</English>
+            <German>CPR-Wahrscheinlichkeit für ACE-Doctors</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_SETTING_CHANCE_1">
+            <English>CPR-chance for ACE medics</English>
+            <German>CPR-Wahrscheinlichkeit für ACE-Medics</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_SETTING_CHANCE_0">
+            <English>CPR-chance for non-medics</English>
+            <German>CPR-Wahrscheinlichkeit für Nicht-Medics</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_SETTING_CHANCE_AED">
+            <English>Probability of success for AED usage</English>
+            <German>Erfolgswahrscheinlichkeit für Defibrillatoren</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_SETTING_LOCATION_AED">
+            <English>Locations AED</English>
+            <German>Orte für AED</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_SETTING_LOCATION_AED_DESCRIPTION">
+            <English>Where can the AED be used?</English>
+            <German>Wo kann der AED verwendet werden?</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_SETTING_STATION">
+            <English>Stationary AED objects</English>
+            <German>Stationäre AED-Objekte</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_SETTING_STATION_DESCRIPTION">
+            <English>Which objects can be used as a stationary AED (seperate by comma)?</English>
+            <German>Welche Objekte können als stationärer AED eingesetzt werden (Aufzählung mit Komma)?</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_CHECKPULSE_HINT">
+            <English>You need to use CPR or AED to resuscitate.</English>
+            <German>Es muss HLW oder AED benutzt werden.</German>
+        </Key>
+        <Key ID="STR_keko_medical_cpr_SETTING_AED_DEPLETED">
+            <English>Your AED's battery is depleted.</English>
+            <German>AED-Batterie ist leer.</German>
+        </Key>
+    </Package>
+</Project>
