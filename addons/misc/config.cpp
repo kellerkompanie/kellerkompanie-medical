@@ -25,7 +25,7 @@ class CfgPatches {
 #define MACRO_ADDITEM(ITEM,COUNT) class _xx_##ITEM { \
     name = #ITEM; \
     count = COUNT; \
-};
+}
 
 #include "CfgMoves.hpp"
 #include "CfgFunctions.hpp"
