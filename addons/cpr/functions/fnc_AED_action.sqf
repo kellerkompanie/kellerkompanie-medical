@@ -13,15 +13,9 @@ private _bystanders = ( allUnits select {_x distance _target < 1.7} ) - [_caller
 if ( _inCardiac || _inRevive ) exitWith {
     //execute aed treatment local to the target:
     if (local _target) exitWith {
-        //diagnostics
-        [_target,"target is local"] call FUNC(diag);
-
         //aed event:
         [QGVAR(evh_AED_local), [_caller, _target]] call CBA_fnc_localEvent;
     };
-
-    //diagnostics:
-    [_target,"target is not local to the caller"] call FUNC(diag);
 
     //aed event:
     [QGVAR(evh_AED_local), [_caller, _target], _target] call CBA_fnc_targetEvent;

@@ -8,7 +8,6 @@ PREP(AED_station_condition);
 PREP(CPR_action);
 PREP(CPR_local);
 PREP(createAEDstations);
-PREP(diag);
 PREP(getBloodLoss);
 PREP(getList);
 PREP(isResurrectable);

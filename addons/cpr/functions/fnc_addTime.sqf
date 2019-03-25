@@ -17,8 +17,5 @@ if (!isNil "_reviveStartTime") then {
 
 private _return = _target getVariable "ace_medical_reviveStartTime";
 
-//diagnostics:
-[_target,format ["added time was %1. New reviveStartTime was %2, with a difference to cba_missiontime of %3 seconds.", _timeAdded - _reviveStartTime, _return, (CBA_missionTime - _return)]] call FUNC(diag);
-
 //return:
 _return;

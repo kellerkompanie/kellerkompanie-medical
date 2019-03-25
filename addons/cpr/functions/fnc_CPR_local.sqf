@@ -14,9 +14,6 @@ if ( _inRevive ) then {
 
 //exit if cpr no longer possible:
 if !( [_target] call FUNC(isResurrectable) ) exitWith {
-    //diagnostics:
-    [_caller,"custom CPR on target no longer possible"] call FUNC(diag);
-
     //log the inability for custom CPR to the medic log:
     [_target, "activity", localize LSTRING(CPR_FATAL), [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
     [_target, "activity_view", localize LSTRING(CPR_FATAL), [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
@@ -27,9 +24,6 @@ private _probability = ([_caller,_target] call FUNC(probability)) min 100;
 
 //let's roll the dice:
 private _diceRoll = 1+floor(random 100);
-
-//diagnostics:
-[_caller,format ["resulting probability was at %1 per-cent, and the dice-roll was %2.",_probability, _diceRoll]] call FUNC(diag);
 
 if ( _probability >= _diceRoll ) exitWith {
     //resetting the values of the target:
@@ -61,15 +55,9 @@ if ( _probability >= _diceRoll ) exitWith {
     [_target, "activity", localize LSTRING(CPR_COMPLETED), [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
     [_target, "activity_view", localize LSTRING(CPR_COMPLETED), [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
 
-    //diagnostics:
-    [_caller,"patient has been successfully stabilized"] call FUNC(diag);
-
     //return:
     true;
 };
-
-//diagnostics:
-[_caller,"patient has not been stabilized"] call FUNC(diag);
 
 //log the custom cpr to the treatment log:
 [_target, "activity", localize LSTRING(CPR_EXECUTE), [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
