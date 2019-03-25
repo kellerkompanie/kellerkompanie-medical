@@ -33,7 +33,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Accuvac_Desc_Short);
         descriptionUse = CSTRING(Accuvac_Desc_Use);
         picture = QPATHTOF(ui\accuvac_normal.paa);
-        model = QPAHTOF(models\accuvac\accuvac.p3d);
+        model = QPATHTOF(models\accuvac\accuvac.p3d);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 7;
         };
