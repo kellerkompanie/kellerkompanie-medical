@@ -83,7 +83,7 @@ class CfgVehicles {
                     icon = QPATHTOF(ui\X_Series-Device_W.paa);
                 };
                 class GVAR(R_X_AED): CPR {
-                    displayName = CSTRING(aceCirculation_X_Action_Remove);
+                    displayName = CSTRING(X_Action_Remove);
                     condition = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_fnc_canTreatCached";
                     statement = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_fnc_treatment";
                     exceptions[] = {""};

@@ -8,7 +8,6 @@ PREP_RECOMPILE_END;
 
 #define CBA_SETTINGS_CAT "Kellerkompanie Medical: Circulation"
 
-//Enable aceCirculation things
 [
     QGVAR(enable),
     "CHECKBOX",
@@ -18,10 +17,8 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-//Enable aceCirculation things
 
 private _type = round random(3);
-
 [
     QGVAR(bloodgroup),
     "LIST",
