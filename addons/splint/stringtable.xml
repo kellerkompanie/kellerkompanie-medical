@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="keko_medical">
+    <Package name="splint">
+        <Key ID="STR_keko_medical_splint_DISPLAYNAME">
+            <English>SAM splint</English>
+            <German>Alu-Polsterschiene</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_DISPLAYNAME_USED">
+            <English>SAM splint (used)</English>
+            <German>Alu-Polsterschiene (benutzt)</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_DESCRIPTION">
+            <English>Use to splint damaged limb</English>
+            <German>Zum Schienen verletzter Gliedmaßen</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_APPLIED">
+            <English>%1 applied splint to %3</English>
+            <German>%1 hat %3 geschient</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_ACTION">
+            <English>Apply SAM splint</English>
+            <German>Alu-Polsterschiene</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_PROGRESS">
+            <English>Applying splint...</English>
+            <German>Gliedmaß wird geschient...</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_ARM">
+            <English>arm</English>
+            <German>Arm</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_ARMS">
+            <English>arms</English>
+            <German>Armen</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_LEG">
+            <English>leg</English>
+            <German>Bein</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_LEGS">
+            <English>legs</English>
+            <German>Beinen</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_REOPEN">
+            <English>Splint has come undone</English>
+            <German>Polsterschiene hat sich gelöst</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_REOPEN_HINT">
+            <English>One of your SAM splints has come undone! You can reuse the splint.</English>
+            <German>Deine Polsterschiene hat sich gelöst! Die Polsterschiene kann erneut verwendet werden.</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_REOPEN_HINT_LOST">
+            <English>One of your SAM splints has come undone! The splint is lost.</English>
+            <German>Deine Polsterschiene hat sich gelöst! Die Polsterschiene kann nicht erneut verwendet werden.</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_SETTING_ENABLE">
+            <English>Enable ADV - ACE Splint</English>
+            <German>ADV - ACE Splint aktivieren</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_SETTING_CHANCE_MED">
+            <English>Probability for splints to fall off for medics</English>
+            <German>Wahrscheinlichkeit für das Abfallen einer Schiene (Sanitäter)</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_SETTING_CHANCE_REG">
+            <English>Probability for splints to fall off</English>
+            <German>Wahrscheinlichkeit für das Abfallen einer Schiene</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_SETTING_TIME">
+            <English>Time before a splint can fall off (+/-30 seconds)</English>
+            <German>Dauer bevor eine Schiene abfallen kann (+/-30 Sekunden)</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_SETTING_REUSE">
+            <English>Probability for reusability of splints</English>
+            <German>Wahrscheinlichkeit für die Wiederverwendbarkeit einer Schiene</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_CHECKLIMBS_MESSAGE">
+            <English>Patient %1 %2 &lt;br/&gt; %1 %3</English>
+            <German>Patient %1 %2 &lt;br/&gt; %1 %3</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_CHECKLIMBS_HIT">
+            <English>has been wounded and needs a SAM-Splint on his %1</English>
+            <German>wurde verletzt und benötigt eine Alu-Polsterschiene an seinen %1</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_CHECKLIMBS_NOTHIT">
+            <English>needs no Splints on his %1</English>
+            <German>benötigt keine Schienung an seinen %1</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_ACTION_CHECKLIMBS">
+            <English>Limb analysis</English>
+            <German>Gliedmaßen-Check</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_CHECKLIMBS_PROGRESS">
+            <English>Checking limb...</English>
+            <German>Überprüfe Gliedmaße...</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_SETTING_PATIENT_CONDITION">
+            <English>Patient's condition to apply splint</English>
+            <German>Patientenbedingung für Splinte</German>
+            <Japanese>添え木を使用できる患者の状態</Japanese>
+        </Key>
+        <Key ID="STR_keko_medical_splint_SETTING_PATIENT_CONDITION_NO">
+            <English>Patient can still be wounded</English>
+            <German>Patient kann verletzt sein</German>
+        </Key>
+        <Key ID="STR_keko_medical_splint_SETTING_PATIENT_CONDITION_YES">
+            <English>Wounds have to be bandaged</English>
+            <German>Wunden müssen versorgt sein</German>
+        </Key>
+    </Package>
+</Project>
