@@ -9,7 +9,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Larynx_Desc_Short);
         descriptionUse = CSTRING(Larynx_Desc_Use);
         picture = QPATHTOF(ui\larynx_normal.paa);
-        model = QPATHOF(models\larynx_tube\tube.p3d);
+        model = QPATHTOF(models\larynx_tube\tube.p3d);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         };
