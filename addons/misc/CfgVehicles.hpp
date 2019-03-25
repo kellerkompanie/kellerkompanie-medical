@@ -46,7 +46,7 @@ class CfgVehicles {
     };
 
     class weapon_bag_base;
-    class keko_stretcherBag): weapon_bag_base {
+    class keko_stretcherBag: weapon_bag_base {
         class assembleInfo {
             displayName = "Stretcher";
             assembleTo = "keko_stretcher";
