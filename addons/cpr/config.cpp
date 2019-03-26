@@ -16,7 +16,7 @@ class CfgPatches {
             "ace_medical",
             "cba_settings"
         };
-        author = ECSTRING(common,Schwaggot);
+        author = "Schwaggot";
         authors[] = {"Schwaggot"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;

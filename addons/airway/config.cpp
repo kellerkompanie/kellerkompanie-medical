@@ -21,7 +21,7 @@ class CfgPatches {
             "cba_settings",
             "keko_medical_main"
         };
-        author = ECSTRING(common,Schwaggot);
+        author = "Schwaggot";
         authors[] = {"Schwaggot"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
