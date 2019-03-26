@@ -23,11 +23,6 @@ class CfgPatches {
     };
 };
 
-#define MACRO_ADDITEM(ITEM,COUNT) class _xx_##ITEM { \
-    name = #ITEM; \
-    count = COUNT; \
-}
-
 #define MACRO_AED_STATION class ACE_Actions { \
     class ACE_MainActions { \
         condition = "true"; \
