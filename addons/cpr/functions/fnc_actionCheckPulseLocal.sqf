@@ -1,20 +1,4 @@
 #include "script_component.hpp"
-﻿/*
- * Author: Glowbal, Belbo
- * Local callback for checking the pulse of a patient
- *
- * Arguments:
- * 0: The medic <OBJECT>
- * 1: The patient <OBJECT>
- *
- * Return Value:
- * None
- *
- * Example:
- * [bob, kevin] call ACE_medical_fnc_actionCheckPulseLocal
- *
- * Public: No
- */
 
 params ["_caller", "_unit", "_selectionName"];
 
