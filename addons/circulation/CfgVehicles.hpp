@@ -1,3 +1,5 @@
+#define QQPATHTOF(var1) QUOTE(QPATHTOF(var1))
+
 class CfgVehicles {
     class WeaponHolder_Single_limited_item_F;
     class keko_AEDItem;
