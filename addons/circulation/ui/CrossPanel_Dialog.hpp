@@ -6,7 +6,7 @@ class GVAR(CrossPanel_Dialog) {
     objects[] = {};
 
     class controls {
-        class BACKGROUND {
+        class background {
             moving = 1;
             type = 0;
             font = "TahomaB";

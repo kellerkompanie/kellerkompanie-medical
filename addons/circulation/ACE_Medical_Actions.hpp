@@ -11,7 +11,7 @@ class ACE_Medical_Actions {
             allowedSelections[] = {"head"};
             items[] = {};
             callbackSuccess = QUOTE([ARR_5('keko_painkiller', _player, _target, _selectionName, 'Painkillers')] call FUNC(removeItemfromMag));
-            condition = QUOTE(('keko_painkiller' in (magazines _player) || 'keko_painkiller' in (magazines _target)));
+            condition = QUOTE('keko_painkiller' in (magazines _player) || 'keko_painkiller' in (magazines _target));
             litter[] = {};
         };
         class CheckDogtags: checkPulse {
@@ -32,7 +32,7 @@ class ACE_Medical_Actions {
         class Defibrillator: CPR {
             items[] = {{"keko_AED", "keko_X_AED"}};
             treatmentTime = 10;
-            callbackProgress = QUOTE(call FUNC(AED_sound);
+            callbackProgress = QUOTE(call FUNC(AED_sound));
         };
         class X_Defibrillator: CPR {
             displayName = CSTRING(X_Action_Use);

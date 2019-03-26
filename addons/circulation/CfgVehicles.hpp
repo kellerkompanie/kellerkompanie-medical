@@ -108,7 +108,7 @@ class CfgVehicles {
                         class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
                         class Painkillers {
                             displayName = CSTRING(Inject_Box_Painkillers);
-                            condition = QUOTE('keko_painkiller' in (magazines _player) || 'keko_painkiller' in (magazines _target)));
+                            condition = QUOTE('keko_painkiller' in (magazines _player) || 'keko_painkiller' in (magazines _target));
                             statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_fnc_treatment";
                             showDisabled = 0;
                             exceptions[] = {"isNotSitting"};
