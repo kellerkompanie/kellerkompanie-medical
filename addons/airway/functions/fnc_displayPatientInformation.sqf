@@ -69,7 +69,7 @@ if (_show) then {
                 if (_target getVariable [QGVAR(airway), false] && _selectionN isEqualTo 0) then {
                     private _a = _target getVariable [QGVAR(airway_item), ""];
                     if !(_a isEqualTo "") then {
-                      private _text = format ["STR_keko_medical_airway_%1_Display", _a];
+                      private _text = format [LSTRING(%1_Display), _a];
                       _genericMessages pushback [localize _text, [0.1, 1, 1, 1]];
                     };
                 };

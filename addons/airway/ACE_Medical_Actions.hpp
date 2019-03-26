@@ -10,9 +10,9 @@ class ACE_Medical_Actions {
             requiredMedic = 1;
             treatmentTime = 5;
             items[] = {"keko_larynx"};
-            condition = "!([_target] call ace_common_fnc_isAwake) && (missionNamespace getVariable ['keko_medical_airway_enable',true])";
+            condition = QUOTE(!([_target] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]));
             patientStateCondition = 0;
-            callbackSuccess = "[_player, _target, 'Larynxtubus'] call keko_medical_airway_fnc_treatmentAdvanced_airway";
+            callbackSuccess = QUOTE([ARR_3(_player, _target, 'Larynxtubus')] call FUNC(treatmentAdvanced_airway));
             callbackFailure = "";
             callbackProgress = "";
             itemConsumed = 1;
@@ -29,15 +29,15 @@ class ACE_Medical_Actions {
             displayName = CSTRING(Guedel_Display);
             requiredMedic = 0;
             items[] = {"keko_guedel"};
-            callbackSuccess = "[_player, _target, 'Guedeltubus'] call keko_medical_airway_fnc_treatmentAdvanced_airway";
+            callbackSuccess = QUOTE([ARR_3(_player, _target, 'Guedeltubus')] call FUNC(treatmentAdvanced_airway));
         };
         class Accuvac: larynxtubus {
             displayName = "Accuvac";
             treatmentTime = 8;
             items[] = {"keko_accuvac"};
             itemConsumed = 0;
-            callbackSuccess = "[_player, _target] call keko_medical_airway_fnc_treatmentAdvanced_accuvac";
-            callbackProgress = "_this call keko_medical_airway_fnc_accuvacSound";
+            callbackSuccess = QUOTE([ARR_2(_player, _target)] call FUNC(treatmentAdvanced_accuvac));
+            callbackProgress = QUOTE(_this call FUNC(accuvacSound));
         };
         class Overstretch: larynxtubus {
             displayName = CSTRING(overstretch);
@@ -45,8 +45,8 @@ class ACE_Medical_Actions {
             treatmentTime = 2;
             requiredMedic = 0;
             items[] = {};
-            condition = "!([_target] call ace_common_fnc_isAwake) && !(_target getVariable ['keko_medical_airway_overstretch', false]) && (missionNamespace getVariable ['keko_medical_airway_enable',true])";
-            callbackSuccess = "[_player, _target] call keko_medical_airway_fnc_treatmentAdvanced_overstretchHead";
+            condition = QUOTE(!([_target] call ace_common_fnc_isAwake) && !(_target getVariable [ARR_2(QQGVAR(overstretch), false)]) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]));
+            callbackSuccess = QUOTE([ARR_2(_player, _target)] call FUNC(treatmentAdvanced_overstretchHead));
         };
         class TurnAround: larynxtubus {
             displayName = CSTRING(turnaround);
@@ -54,7 +54,7 @@ class ACE_Medical_Actions {
             treatmentTime = 5;
             requiredMedic = 0;
             items[] = {};
-            callbackSuccess = "[_player, _target] call keko_medical_airway_fnc_treatmentAdvanced_turnaroundHead";
+            callbackSuccess = QUOTE([ARR_2(_player, _target)] call FUNC(treatmentAdvanced_turnaroundHead));
         };
         class CheckPulse;
         class CheckAirway: checkPulse {
@@ -63,8 +63,8 @@ class ACE_Medical_Actions {
             treatmentTime = 5;
             allowedSelections[] = {"head"};
             allowSelfTreatment = 0;
-            callbackSuccess = "[_player, _target] call keko_medical_airway_fnc_checkAirway";
-            condition = "!([_target] call ace_common_fnc_isAwake) && (missionNamespace getVariable ['keko_medical_airway_enable',true])";
+            callbackSuccess = QUOTE([ARR_2(_player, _target)] call FUNC(checkAirway));
+            condition = QUOTE(!([_target] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]));
         };
     };
 };
