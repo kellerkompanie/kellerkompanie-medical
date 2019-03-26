@@ -66,7 +66,7 @@ class CfgVehicles {
                 class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
                 class Painkillers {
                     displayName = CSTRING(Inject_Box_Painkillers);
-                    condition = "('keko_medical_circulation_Painkiller' in (magazines _player) || 'keko_medical_circulation_Painkiller' in (magazines _target))";
+                    condition = QUOTE(('keko_painkiller' in (magazines _player) || 'keko_painkiller' in (magazines _target)));
                     statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_fnc_treatment";
                     showDisabled = 0;
                     exceptions[] = {"isNotSitting"};
@@ -108,7 +108,7 @@ class CfgVehicles {
                         class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
                         class Painkillers {
                             displayName = CSTRING(Inject_Box_Painkillers);
-                            condition = "('keko_medical_circulation_Painkiller' in (magazines _player) || 'keko_medical_circulation_Painkiller' in (magazines _target))";
+                            condition = QUOTE('keko_painkiller' in (magazines _player) || 'keko_painkiller' in (magazines _target)));
                             statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_fnc_treatment";
                             showDisabled = 0;
                             exceptions[] = {"isNotSitting"};
@@ -153,7 +153,7 @@ class CfgVehicles {
                     class CheckBloodPressure {};
                     class Painkillers {
                         displayName = CSTRING(Inject_Box_Painkillers);
-                        condition = "'keko_medical_circulation_Painkiller' in (magazines _player)";
+                        condition = "'keko_painkiller' in (magazines _player)";
                         statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_fnc_treatment";
                         showDisabled = 0;
                         exceptions[] = {"isNotInside", "isNotSitting"};
@@ -164,16 +164,16 @@ class CfgVehicles {
             class ACE_Equipment {
                 class removeSound {
                     displayName = CSTRING(X_Action_removeSound);
-                    condition = "'keko_medical_circulation_X_AED' in (items _player) && !((_player getVariable 'keko_medical_circulation_X_sound1') isEqualTo '')";
-                    statement = "_player setVariable ['keko_medical_circulation_X_sound1', '', true]; _player setVariable ['keko_medical_circulation_X_sound2', '', true];";
+                    condition = QUOTE('keko_X_AED' in (items _player) && !((_player getVariable QQGVAR(X_sound1)) isEqualTo ''));
+                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(X_sound1), '', true)]; _player setVariable [ARR_3(QQGVAR(X_sound2), '', true)];);
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};
                     icon = "";
                 };
                 class addSound {
                     displayName = CSTRING(X_Action_addSound);
-                    condition = "'keko_medical_circulation_X_AED' in (items _player) && ((_player getVariable 'keko_medical_circulation_X_sound1') isEqualTo '')";
-                    statement = "_player setVariable ['keko_medical_circulation_X_sound1', 'x\keko_medical\addons\circulation\sounds\noheartrate.wav', true]; _player setVariable ['keko_medical_circulation_X_sound2', 'x\keko_medical\addons\circulation\sounds\heartrate.wav', true];";
+                    condition = QUOTE('keko_X_AED' in (items _player) && ((_player getVariable QQGVAR(X_sound1)) isEqualTo ''));
+                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(X_sound1), QQPATHTOF(sounds\noheartrate.wav), true)]; _player setVariable [ARR_3(QQGVAR(X_sound2), QQPATHTOF(sounds\heartrate.wav), true)];);
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};
                     icon = "";
@@ -181,7 +181,7 @@ class CfgVehicles {
                 class openCrossPanel {
                     displayName = CSTRING(open_crosspanel);
                     condition = "('keko_crossPanel' in (uniformItems _player)) || ('keko_crossPanel' in (vestItems _player))";
-                    statement = "createDialog 'keko_medical_circulation_CrossPanel_Dialog'";
+                    statement = QUOTE(createDialog QQGVAR(CrossPanel_Dialog));
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};
                     icon = "";

@@ -13,17 +13,17 @@ class Extended_Init_EventHandlers {
     };
     class Land_IntravenStand_01_empty_F {
         class ADDON {
-            init = "(_this select 0) setVariable ['keko_medical_misc_stand', [], true]";
+            init = QUOTE((_this select 0) setVariable [ARR_3(QQGVAR(stand), [], true)]);
         };
     };
     class Land_IntravenStand_01_1bag_F {
         class ADDON {
-            init = "(_this select 0) setVariable ['keko_medical_misc_stand', [1000], true]";
+            init = QUOTE((_this select 0) setVariable [ARR_3(QQGVAR(stand), [1000], true)]);
         };
     };
     class Land_IntravenStand_01_2bags_F {
         class ADDON {
-            init = "(_this select 0) setVariable ['keko_medical_misc_stand', [1000, 1000], true]";
+            init = QUOTE((_this select 0) setVariable [ARR_3(QQGVAR(stand), [ARR_2(1000, 1000)], true)]);
         };
     };
 };

@@ -1,8 +1,8 @@
 class GVAR(CrossPanel_Dialog) {
     idd = -1;
     movingEnable = 1;
-    onLoad = "uiNamespace setVariable ['keko_medical_circulation_CrossPanel_Display', (_this select 0)]";
-    onUnload = "_this call keko_medical_circulation_fnc_onCloseDialog";
+    onLoad = QUOTE(uiNamespace setVariable [ARR_2(QQGVAR(CrossPanel_Display), (_this select 0))]);
+    onUnload = QUOTE(_this call FUNC(onCloseDialog);
     objects[] = {};
 
     class controls {

@@ -10,8 +10,8 @@ class ACE_Medical_Actions {
             displayNameProgress = CSTRING(Using);
             allowedSelections[] = {"head"};
             items[] = {};
-            callbackSuccess = "['keko_medical_circulation_Painkiller', _player, _target, _selectionName, 'Painkillers'] call keko_medical_circulation_fnc_removeItemfromMag";
-            condition = "('keko_medical_circulation_Painkiller' in (magazines _player) || 'keko_medical_circulation_Painkiller' in (magazines _target))";
+            callbackSuccess = QUOTE([ARR_5('keko_painkiller', _player, _target, _selectionName, 'Painkillers')] call FUNC(removeItemfromMag));
+            condition = QUOTE(('keko_painkiller' in (magazines _player) || 'keko_painkiller' in (magazines _target)));
             litter[] = {};
         };
         class CheckDogtags: checkPulse {
@@ -32,26 +32,26 @@ class ACE_Medical_Actions {
         class Defibrillator: CPR {
             items[] = {{"keko_AED", "keko_X_AED"}};
             treatmentTime = 10;
-            callbackProgress = "call keko_medical_circulation_fnc_AED_sound";
+            callbackProgress = QUOTE(call FUNC(AED_sound);
         };
         class X_Defibrillator: CPR {
             displayName = CSTRING(X_Action_Use);
             displayNameProgress = CSTRING(X_Action_Progress);
             items[] = {"keko_X_AED"};
-            condition = "!(_player getVariable ['keko_medical_circulation_use',false])";
+            condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(use),false)]));
             treatmentTime = 2;
             requiredMedic = 1;
             callbackProgress = "";
-            callbackSuccess = "[_player, _target] call keko_medical_circulation_fnc_treatmentAdvanced_X";
+            callbackSuccess = QUOTE([ARR_2(_player, _target)] call FUNC(treatmentAdvanced_X));
             animationCaller = "AinvPknlMstpSnonWnonDnon_medic3";
         };
         class Remove_X_Defibrillator: X_Defibrillator {
             displayName = CSTRING(X_Action_Remove);
             items[] = {};
-            condition = "_target getVariable ['keko_medical_circulation_X', true]";
+            condition = QUOTE(_target getVariable [ARR_2(QQGVAR(X), true)]);
             treatmentTime = 2;
             callbackProgress = "";
-            callbackSuccess = "_target setVariable ['keko_medical_circulation_X', false, true]; _player setVariable ['keko_medical_circulation_use', false, true]";
+            callbackSuccess = QUOTE(_target setVariable [ARR_3(QQGVAR(X), false, true)]; _player setVariable [ARR_3(QQGVAR(use), false, true)]);
         };
     };
 };

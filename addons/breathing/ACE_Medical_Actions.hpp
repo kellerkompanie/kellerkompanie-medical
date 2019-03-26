@@ -10,9 +10,9 @@ class ACE_Medical_Actions {
             requiredMedic = 1;
             treatmentTime = 2;
             items[] = {"keko_pulseOximeter"};
-            condition = "missionNamespace getVariable 'keko_medical_breathing_enable'";
+            condition = QGVAR(enable);
             patientStateCondition = 0;
-            callbackSuccess = "[_player, _target] call keko_medical_breathing_fnc_treatmentAdvanced_pulseoximeter";
+            callbackSuccess = QUOTE([ARR_2(_player, _target)] call FUNC(treatmentAdvanced_pulseoximeter));
             callbackFailure = "";
             callbackProgress = "";
             itemConsumed = 1;
@@ -35,9 +35,9 @@ class ACE_Medical_Actions {
             requiredMedic = 1;
             treatmentTime = 2;
             items[] = {};
-            condition = "_target getVariable ['keko_medical_breathing_pulseoximeter', false]";
+            condition = QUOTE(_target getVariable [ARR_2(QQGVAR(pulseoximeter), false)]);
             patientStateCondition = 0;
-            callbackSuccess = "[_player, _target] call keko_medical_breathing_fnc_treatmentAdvanced_removePulseoximeter";
+            callbackSuccess = QUOTE([ARR_2(_player, _target)] call FUNC(treatmentAdvanced_removePulseoximeter));
             callbackFailure = "";
             callbackProgress = "";
             itemConsumed = 0;
@@ -62,7 +62,7 @@ class ACE_Medical_Actions {
             items[] = {"keko_chestSeal"};
             condition = "_target getVariable ['ace_medical_airwayCollapsed', false]";
             patientStateCondition = 0;
-            callbackSuccess = "[_player, _target] call keko_medical_breathing_fnc_treatmentAdvanced_chestSeal";
+            callbackSuccess = QUOTE([ARR_2(_player, _target)] call FUNC(treatmentAdvanced_chestSeal));
             callbackFailure = "";
             callbackProgress = "";
             itemConsumed = 1;
