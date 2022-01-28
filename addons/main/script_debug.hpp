@@ -7,7 +7,7 @@ Fast Recompiling via function
 #ifdef DISABLE_COMPILE_CACHE
     #define LINKFUNC(x) {_this call FUNC(x)}
     #define PREP_RECOMPILE_START    if (isNil "KEKO_MEDICAL_PREP_RECOMPILE") then {KEKO_MEDICAL_RECOMPILES = []; KEKO_MEDICAL_PREP_RECOMPILE = {{call _x} forEach KEKO_MEDICAL_RECOMPILES;}}; private _recomp = {
-    #define PREP_RECOMPILE_END      }; call _recomp; KEKO_MDEICAL_RECOMPILES pushBack _recomp;
+    #define PREP_RECOMPILE_END      }; call _recomp; KEKO_MEDICAL_RECOMPILES pushBack _recomp;
 #else
     #define LINKFUNC(x) FUNC(x)
     #define PREP_RECOMPILE_START /* */
